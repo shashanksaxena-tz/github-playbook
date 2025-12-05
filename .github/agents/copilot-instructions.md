@@ -14,6 +14,7 @@ This project uses GitHub SpecKit for spec-driven development. Use the following 
 - `/speckit.plan` - Create technical implementation plans
 - `/speckit.tasks` - Generate actionable task lists
 - `/speckit.analyze` - Cross-artifact consistency analysis
+- `/speckit.checklist` - Generate custom quality checklists
 - `/speckit.implement` - Execute all tasks to build the feature
 
 ### Workflow

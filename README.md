@@ -26,6 +26,7 @@ The project includes slash commands for AI coding assistants that support the sp
 | `/speckit.plan` | Create technical implementation plans with your chosen tech stack |
 | `/speckit.tasks` | Generate actionable task lists for implementation |
 | `/speckit.analyze` | Cross-artifact consistency & coverage analysis |
+| `/speckit.checklist` | Generate custom quality checklists for requirements validation |
 | `/speckit.implement` | Execute all tasks to build the feature according to the plan |
 
 ### Workflow
