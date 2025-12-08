@@ -33,6 +33,10 @@ description: "Task list for implementing advanced role guides"
 - [X] T002 [P] Create advanced directory for architect-guide at playbook/content/architect-guide/advanced/
 - [X] T003 [P] Create advanced directory for qa-guide at playbook/content/qa-guide/advanced/
 - [X] T004 [P] Create advanced directory for devops-guide at playbook/content/devops-guide/advanced/
+- [ ] T141 [P] Create advanced directory for product-owner-guide at playbook/content/product-owner-guide/advanced/
+- [ ] T142 [P] Create advanced directory for product-manager-guide at playbook/content/product-manager-guide/advanced/
+- [ ] T143 [P] Create advanced directory for ui-designer-guide at playbook/content/ui-designer-guide/advanced/
+- [ ] T144 [P] Create advanced directory for ux-designer-guide at playbook/content/ux-designer-guide/advanced/
 
 ---
 
@@ -116,6 +120,46 @@ description: "Task list for implementing advanced role guides"
 - [ ] T053 [P] [US2] Validate frontmatter and markdown in architect-guide/advanced/lead-practices.md
 - [ ] T054 [P] [US2] Validate frontmatter and markdown in qa-guide/advanced/lead-practices.md
 - [ ] T055 [P] [US2] Validate frontmatter and markdown in devops-guide/advanced/lead-practices.md
+- [ ] T189 [P] [US2] Create product-owner-guide lead-practices.md with frontmatter at playbook/content/product-owner-guide/advanced/lead-practices.md
+- [ ] T190 [P] [US2] Create product-manager-guide lead-practices.md with frontmatter at playbook/content/product-manager-guide/advanced/lead-practices.md
+- [ ] T191 [P] [US2] Create ui-designer-guide lead-practices.md with frontmatter at playbook/content/ui-designer-guide/advanced/lead-practices.md
+- [ ] T192 [P] [US2] Create ux-designer-guide lead-practices.md with frontmatter at playbook/content/ux-designer-guide/advanced/lead-practices.md
+- [ ] T193 [P] [US2] Add "When to Use This Guide" section to product-owner-guide/advanced/lead-practices.md
+- [ ] T194 [P] [US2] Add "When to Use This Guide" section to product-manager-guide/advanced/lead-practices.md
+- [ ] T195 [P] [US2] Add "When to Use This Guide" section to ui-designer-guide/advanced/lead-practices.md
+- [ ] T196 [P] [US2] Add "When to Use This Guide" section to ux-designer-guide/advanced/lead-practices.md
+- [ ] T197 [US2] Add case study 1 (product team AI adoption) to product-owner-guide/advanced/lead-practices.md
+- [ ] T198 [US2] Add case study 2 (stakeholder communication improvement) to product-owner-guide/advanced/lead-practices.md
+- [ ] T199 [US2] Add case study 3 (sprint planning optimization) to product-owner-guide/advanced/lead-practices.md
+- [ ] T200 [US2] Add case study 1 (product strategy alignment) to product-manager-guide/advanced/lead-practices.md
+- [ ] T201 [US2] Add case study 2 (market research efficiency) to product-manager-guide/advanced/lead-practices.md
+- [ ] T202 [US2] Add case study 3 (cross-functional roadmap planning) to product-manager-guide/advanced/lead-practices.md
+- [ ] T203 [US2] Add case study 1 (design system scaling) to ui-designer-guide/advanced/lead-practices.md
+- [ ] T204 [US2] Add case study 2 (team design consistency) to ui-designer-guide/advanced/lead-practices.md
+- [ ] T205 [US2] Add case study 3 (accessibility standards adoption) to ui-designer-guide/advanced/lead-practices.md
+- [ ] T206 [US2] Add case study 1 (research process standardization) to ux-designer-guide/advanced/lead-practices.md
+- [ ] T207 [US2] Add case study 2 (insight sharing framework) to ux-designer-guide/advanced/lead-practices.md
+- [ ] T208 [US2] Add case study 3 (cross-team research collaboration) to ux-designer-guide/advanced/lead-practices.md
+- [ ] T209 [P] [US2] Add "Technical Decision Frameworks" section to product-owner-guide/advanced/lead-practices.md
+- [ ] T210 [P] [US2] Add "Strategic Decision Frameworks" section to product-manager-guide/advanced/lead-practices.md
+- [ ] T211 [P] [US2] Add "Design Decision Frameworks" section to ui-designer-guide/advanced/lead-practices.md
+- [ ] T212 [P] [US2] Add "Research Decision Frameworks" section to ux-designer-guide/advanced/lead-practices.md
+- [ ] T213 [P] [US2] Add "Cross-Functional Collaboration" section to product-owner-guide/advanced/lead-practices.md
+- [ ] T214 [P] [US2] Add "Cross-Functional Collaboration" section to product-manager-guide/advanced/lead-practices.md
+- [ ] T215 [P] [US2] Add "Cross-Functional Collaboration" section to ui-designer-guide/advanced/lead-practices.md
+- [ ] T216 [P] [US2] Add "Cross-Functional Collaboration" section to ux-designer-guide/advanced/lead-practices.md
+- [ ] T217 [P] [US2] Add "Measuring Team Impact" section with team metrics to product-owner-guide/advanced/lead-practices.md
+- [ ] T218 [P] [US2] Add "Measuring Team Impact" section with team metrics to product-manager-guide/advanced/lead-practices.md
+- [ ] T219 [P] [US2] Add "Measuring Team Impact" section with team metrics to ui-designer-guide/advanced/lead-practices.md
+- [ ] T220 [P] [US2] Add "Measuring Team Impact" section with team metrics to ux-designer-guide/advanced/lead-practices.md
+- [ ] T221 [P] [US2] Add "Related Content" section with 2+ cross-references to product-owner-guide/advanced/lead-practices.md
+- [ ] T222 [P] [US2] Add "Related Content" section with 2+ cross-references to product-manager-guide/advanced/lead-practices.md
+- [ ] T223 [P] [US2] Add "Related Content" section with 2+ cross-references to ui-designer-guide/advanced/lead-practices.md
+- [ ] T224 [P] [US2] Add "Related Content" section with 2+ cross-references to ux-designer-guide/advanced/lead-practices.md
+- [ ] T225 [P] [US2] Validate frontmatter and markdown in product-owner-guide/advanced/lead-practices.md
+- [ ] T226 [P] [US2] Validate frontmatter and markdown in product-manager-guide/advanced/lead-practices.md
+- [ ] T227 [P] [US2] Validate frontmatter and markdown in ui-designer-guide/advanced/lead-practices.md
+- [ ] T228 [P] [US2] Validate frontmatter and markdown in ux-designer-guide/advanced/lead-practices.md
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently - lead engineers can implement team-scale AI adoption strategies
 
@@ -165,6 +209,42 @@ description: "Task list for implementing advanced role guides"
 - [ ] T089 [P] [US3] Validate frontmatter and markdown in architect-guide/advanced/principal-practices.md
 - [ ] T090 [P] [US3] Validate frontmatter and markdown in qa-guide/advanced/principal-practices.md
 - [ ] T091 [P] [US3] Validate frontmatter and markdown in devops-guide/advanced/principal-practices.md
+- [ ] T229 [P] [US3] Create product-owner-guide principal-practices.md with frontmatter at playbook/content/product-owner-guide/advanced/principal-practices.md
+- [ ] T230 [P] [US3] Create product-manager-guide principal-practices.md with frontmatter at playbook/content/product-manager-guide/advanced/principal-practices.md
+- [ ] T231 [P] [US3] Create ui-designer-guide principal-practices.md with frontmatter at playbook/content/ui-designer-guide/advanced/principal-practices.md
+- [ ] T232 [P] [US3] Create ux-designer-guide principal-practices.md with frontmatter at playbook/content/ux-designer-guide/advanced/principal-practices.md
+- [ ] T233 [P] [US3] Add "When to Use This Guide" section to product-owner-guide/advanced/principal-practices.md
+- [ ] T234 [P] [US3] Add "When to Use This Guide" section to product-manager-guide/advanced/principal-practices.md
+- [ ] T235 [P] [US3] Add "When to Use This Guide" section to ui-designer-guide/advanced/principal-practices.md
+- [ ] T236 [P] [US3] Add "When to Use This Guide" section to ux-designer-guide/advanced/principal-practices.md
+- [ ] T237 [P] [US3] Add "Organization-Wide Product Strategy" section with frameworks to product-owner-guide/advanced/principal-practices.md
+- [ ] T238 [P] [US3] Add "Organization-Wide Product Strategy" section with frameworks to product-manager-guide/advanced/principal-practices.md
+- [ ] T239 [P] [US3] Add "Organization-Wide Design Strategy" section with frameworks to ui-designer-guide/advanced/principal-practices.md
+- [ ] T240 [P] [US3] Add "Organization-Wide UX Strategy" section with frameworks to ux-designer-guide/advanced/principal-practices.md
+- [ ] T241 [P] [US3] Add "Multi-Team Product Governance" frameworks to product-owner-guide/advanced/principal-practices.md
+- [ ] T242 [P] [US3] Add "Multi-Team Product Governance" frameworks to product-manager-guide/advanced/principal-practices.md
+- [ ] T243 [P] [US3] Add "Multi-Team Design Governance" frameworks to ui-designer-guide/advanced/principal-practices.md
+- [ ] T244 [P] [US3] Add "Multi-Team UX Governance" frameworks to ux-designer-guide/advanced/principal-practices.md
+- [ ] T245 [P] [US3] Add "Innovation Assessment Framework" to product-owner-guide/advanced/principal-practices.md
+- [ ] T246 [P] [US3] Add "Innovation Assessment Framework" to product-manager-guide/advanced/principal-practices.md
+- [ ] T247 [P] [US3] Add "Innovation Assessment Framework" to ui-designer-guide/advanced/principal-practices.md
+- [ ] T248 [P] [US3] Add "Innovation Assessment Framework" to ux-designer-guide/advanced/principal-practices.md
+- [ ] T249 [P] [US3] Add "High-Impact Product Decisions" section to product-owner-guide/advanced/principal-practices.md
+- [ ] T250 [P] [US3] Add "High-Impact Strategic Decisions" section to product-manager-guide/advanced/principal-practices.md
+- [ ] T251 [P] [US3] Add "High-Impact Design Decisions" section to ui-designer-guide/advanced/principal-practices.md
+- [ ] T252 [P] [US3] Add "High-Impact Research Decisions" section to ux-designer-guide/advanced/principal-practices.md
+- [ ] T253 [P] [US3] Add "Measuring Organizational Impact" section with org metrics to product-owner-guide/advanced/principal-practices.md
+- [ ] T254 [P] [US3] Add "Measuring Organizational Impact" section with org metrics to product-manager-guide/advanced/principal-practices.md
+- [ ] T255 [P] [US3] Add "Measuring Organizational Impact" section with org metrics to ui-designer-guide/advanced/principal-practices.md
+- [ ] T256 [P] [US3] Add "Measuring Organizational Impact" section with org metrics to ux-designer-guide/advanced/principal-practices.md
+- [ ] T257 [P] [US3] Add "Related Content" section with 2+ cross-references to product-owner-guide/advanced/principal-practices.md
+- [ ] T258 [P] [US3] Add "Related Content" section with 2+ cross-references to product-manager-guide/advanced/principal-practices.md
+- [ ] T259 [P] [US3] Add "Related Content" section with 2+ cross-references to ui-designer-guide/advanced/principal-practices.md
+- [ ] T260 [P] [US3] Add "Related Content" section with 2+ cross-references to ux-designer-guide/advanced/principal-practices.md
+- [ ] T261 [P] [US3] Validate frontmatter and markdown in product-owner-guide/advanced/principal-practices.md
+- [ ] T262 [P] [US3] Validate frontmatter and markdown in product-manager-guide/advanced/principal-practices.md
+- [ ] T263 [P] [US3] Validate frontmatter and markdown in ui-designer-guide/advanced/principal-practices.md
+- [ ] T264 [P] [US3] Validate frontmatter and markdown in ux-designer-guide/advanced/principal-practices.md
 
 **Checkpoint**: All user stories should now be independently functional - principal engineers have strategic guidance for organization-wide AI adoption
 
@@ -243,7 +323,103 @@ description: "Task list for implementing advanced role guides"
 
 ---
 
-## Phase 9: Polish & Cross-Cutting Concerns
+## Phase 7: User Story 7 - Product Owner Applies Advanced Product Management Patterns (Priority: P3)
+
+**Goal**: Deliver advanced product management patterns for senior and lead Product Owners with AI-assisted backlog management, user story generation, and sprint planning techniques
+
+**Independent Test**: Senior Product Owner navigates to product-owner-guide/advanced/, finds advanced product management patterns, and implements one AI-assisted backlog management technique in their sprint planning
+
+### Implementation for User Story 7
+
+- [ ] T145 [US7] Create product-owner-guide senior-practices.md with frontmatter at playbook/content/product-owner-guide/advanced/senior-practices.md
+- [ ] T146 [US7] Add "When to Use This Guide" section to product-owner-guide/advanced/senior-practices.md
+- [ ] T147 [US7] Add pattern example 1 (AI-assisted user story generation) to product-owner-guide/advanced/senior-practices.md
+- [ ] T148 [US7] Add pattern example 2 (backlog prioritization with AI) to product-owner-guide/advanced/senior-practices.md
+- [ ] T149 [US7] Add pattern example 3 (sprint planning optimization) to product-owner-guide/advanced/senior-practices.md
+- [ ] T150 [US7] Add "Mentorship & Product Excellence" section to product-owner-guide/advanced/senior-practices.md
+- [ ] T151 [US7] Add "Stakeholder Communication & Optimization" section to product-owner-guide/advanced/senior-practices.md
+- [ ] T152 [US7] Add "Measuring Success" section with individual metrics to product-owner-guide/advanced/senior-practices.md
+- [ ] T153 [US7] Add "Related Content" section with 2+ cross-references to product-owner-guide/advanced/senior-practices.md
+- [ ] T154 [US7] Validate frontmatter and markdown in product-owner-guide/advanced/senior-practices.md
+- [ ] T155 [US7] Security review of examples in product-owner-guide/advanced/senior-practices.md (no sensitive stakeholder data)
+
+**Checkpoint**: Product Owner guide provides advanced product management patterns - senior and lead Product Owners can improve backlog quality and sprint outcomes
+
+---
+
+## Phase 8: User Story 8 - Product Manager Develops Advanced Product Strategy (Priority: P3)
+
+**Goal**: Deliver advanced product strategy patterns for senior and lead Product Managers with AI-assisted market research, feature prioritization, and roadmap planning techniques
+
+**Independent Test**: Senior Product Manager accesses product-manager-guide/advanced/, reviews advanced strategy patterns, and applies one AI-assisted market research technique to their competitive analysis
+
+### Implementation for User Story 8
+
+- [ ] T156 [US8] Create product-manager-guide senior-practices.md with frontmatter at playbook/content/product-manager-guide/advanced/senior-practices.md
+- [ ] T157 [US8] Add "When to Use This Guide" section to product-manager-guide/advanced/senior-practices.md
+- [ ] T158 [US8] Add pattern example 1 (AI-assisted market research) to product-manager-guide/advanced/senior-practices.md
+- [ ] T159 [US8] Add pattern example 2 (feature prioritization frameworks) to product-manager-guide/advanced/senior-practices.md
+- [ ] T160 [US8] Add pattern example 3 (roadmap planning with AI) to product-manager-guide/advanced/senior-practices.md
+- [ ] T161 [US8] Add "Mentorship & Strategy Excellence" section to product-manager-guide/advanced/senior-practices.md
+- [ ] T162 [US8] Add "Product Analytics & Optimization" section to product-manager-guide/advanced/senior-practices.md
+- [ ] T163 [US8] Add "Measuring Success" section with individual metrics to product-manager-guide/advanced/senior-practices.md
+- [ ] T164 [US8] Add "Related Content" section with 2+ cross-references to product-manager-guide/advanced/senior-practices.md
+- [ ] T165 [US8] Validate frontmatter and markdown in product-manager-guide/advanced/senior-practices.md
+- [ ] T166 [US8] Security review of examples in product-manager-guide/advanced/senior-practices.md (no confidential market data)
+
+**Checkpoint**: Product Manager guide provides advanced strategy patterns - senior and lead Product Managers can improve market insights and feature decisions
+
+---
+
+## Phase 9: User Story 9 - UI Designer Applies Advanced Visual Design Patterns (Priority: P3)
+
+**Goal**: Deliver advanced UI design patterns for senior and lead UI Designers with AI-assisted design system creation, visual exploration, and accessibility patterns
+
+**Independent Test**: Senior UI Designer navigates to ui-designer-guide/advanced/, finds advanced design patterns, and implements one AI-assisted design system component pattern in their work
+
+### Implementation for User Story 9
+
+- [ ] T167 [US9] Create ui-designer-guide senior-practices.md with frontmatter at playbook/content/ui-designer-guide/advanced/senior-practices.md
+- [ ] T168 [US9] Add "When to Use This Guide" section to ui-designer-guide/advanced/senior-practices.md
+- [ ] T169 [US9] Add pattern example 1 (AI-assisted design system components) to ui-designer-guide/advanced/senior-practices.md
+- [ ] T170 [US9] Add pattern example 2 (visual design exploration) to ui-designer-guide/advanced/senior-practices.md
+- [ ] T171 [US9] Add pattern example 3 (accessibility compliance patterns) to ui-designer-guide/advanced/senior-practices.md
+- [ ] T172 [US9] Add "Mentorship & Design Excellence" section to ui-designer-guide/advanced/senior-practices.md
+- [ ] T173 [US9] Add "Design System & Optimization" section to ui-designer-guide/advanced/senior-practices.md
+- [ ] T174 [US9] Add "Measuring Success" section with individual metrics to ui-designer-guide/advanced/senior-practices.md
+- [ ] T175 [US9] Add "Related Content" section with 2+ cross-references to ui-designer-guide/advanced/senior-practices.md
+- [ ] T176 [US9] Validate frontmatter and markdown in ui-designer-guide/advanced/senior-practices.md
+- [ ] T177 [US9] Security review of examples in ui-designer-guide/advanced/senior-practices.md (no proprietary design assets)
+
+**Checkpoint**: UI Designer guide provides advanced visual design patterns - senior and lead UI Designers can improve design system quality and consistency
+
+---
+
+## Phase 10: User Story 10 - UX Designer Implements Advanced User Research Patterns (Priority: P3)
+
+**Goal**: Deliver advanced UX research patterns for senior and lead UX Designers with AI-assisted user research, journey mapping, and usability testing techniques
+
+**Independent Test**: Senior UX Designer accesses ux-designer-guide/advanced/, reviews advanced research patterns, and applies one AI-assisted user research technique to their project
+
+### Implementation for User Story 10
+
+- [ ] T178 [US10] Create ux-designer-guide senior-practices.md with frontmatter at playbook/content/ux-designer-guide/advanced/senior-practices.md
+- [ ] T179 [US10] Add "When to Use This Guide" section to ux-designer-guide/advanced/senior-practices.md
+- [ ] T180 [US10] Add pattern example 1 (AI-assisted user research) to ux-designer-guide/advanced/senior-practices.md
+- [ ] T181 [US10] Add pattern example 2 (journey mapping with AI) to ux-designer-guide/advanced/senior-practices.md
+- [ ] T182 [US10] Add pattern example 3 (usability test analysis) to ux-designer-guide/advanced/senior-practices.md
+- [ ] T183 [US10] Add "Mentorship & Research Excellence" section to ux-designer-guide/advanced/senior-practices.md
+- [ ] T184 [US10] Add "User Insights & Optimization" section to ux-designer-guide/advanced/senior-practices.md
+- [ ] T185 [US10] Add "Measuring Success" section with individual metrics to ux-designer-guide/advanced/senior-practices.md
+- [ ] T186 [US10] Add "Related Content" section with 2+ cross-references to ux-designer-guide/advanced/senior-practices.md
+- [ ] T187 [US10] Validate frontmatter and markdown in ux-designer-guide/advanced/senior-practices.md
+- [ ] T188 [US10] Security review of examples in ux-designer-guide/advanced/senior-practices.md (no user PII in research examples)
+
+**Checkpoint**: UX Designer guide provides advanced research patterns - senior and lead UX Designers can improve research quality and actionable insights
+
+---
+
+## Phase 11: Polish & Cross-Cutting Concerns
 
 **Purpose**: Cross-reference updates and final validation that affects multiple user stories
 
@@ -251,17 +427,32 @@ description: "Task list for implementing advanced role guides"
 - [ ] T127 [P] Add cross-reference to architect-guide/advanced/ from existing architect-guide/getting-started/introduction.md
 - [ ] T128 [P] Add cross-reference to qa-guide/advanced/ from existing qa-guide/getting-started/introduction.md
 - [ ] T129 [P] Add cross-reference to devops-guide/advanced/ from existing devops-guide/getting-started/introduction.md
+- [ ] T265 [P] Add cross-reference to product-owner-guide/advanced/ from existing product-owner-guide/getting-started/introduction.md
+- [ ] T266 [P] Add cross-reference to product-manager-guide/advanced/ from existing product-manager-guide/getting-started/introduction.md
+- [ ] T267 [P] Add cross-reference to ui-designer-guide/advanced/ from existing ui-designer-guide/getting-started/introduction.md
+- [ ] T268 [P] Add cross-reference to ux-designer-guide/advanced/ from existing ux-designer-guide/getting-started/introduction.md
 - [ ] T130 [P] Add cross-references between experience levels in developer-guide (senior ↔ lead ↔ principal)
 - [ ] T131 [P] Add cross-references between experience levels in architect-guide (senior ↔ lead ↔ principal)
 - [ ] T132 [P] Add cross-references between experience levels in qa-guide (senior ↔ lead ↔ principal)
 - [ ] T133 [P] Add cross-references between experience levels in devops-guide (senior ↔ lead ↔ principal)
+- [ ] T269 [P] Add cross-references between experience levels in product-owner-guide (senior ↔ lead ↔ principal)
+- [ ] T270 [P] Add cross-references between experience levels in product-manager-guide (senior ↔ lead ↔ principal)
+- [ ] T271 [P] Add cross-references between experience levels in ui-designer-guide (senior ↔ lead ↔ principal)
+- [ ] T272 [P] Add cross-references between experience levels in ux-designer-guide (senior ↔ lead ↔ principal)
 - [ ] T134 Validate all cross-references point to existing documents across all 12 new files
+- [ ] T273 Validate all cross-references point to existing documents across all 12 new product/design files (24 files total)
 - [ ] T135 Run frontmatter validation against contracts/frontmatter-schema.yaml for all 12 documents
+- [ ] T274 Run frontmatter validation against contracts/frontmatter-schema.yaml for all 12 new product/design documents
 - [ ] T136 Verify all senior documents have 3-5 code examples with R.I.C.E. prompts
+- [ ] T275 Verify all senior product/design documents have 3-5 domain examples with appropriate prompting frameworks
 - [ ] T137 Verify all lead documents have 3-5 case studies in S.A.R. format with metrics
+- [ ] T276 Verify all lead product/design documents have 3-5 case studies in S.A.R. format with metrics
 - [ ] T138 Verify all principal documents have strategic frameworks with decision criteria
+- [ ] T277 Verify all principal product/design documents have strategic frameworks with decision criteria
 - [ ] T139 Final content quality review - verify differentiation between experience levels
+- [ ] T278 Final content quality review for product/design roles - verify non-technical focus and role differentiation
 - [ ] T140 Final security review - all code examples demonstrate secure patterns
+- [ ] T279 Final security review for product/design roles - no sensitive stakeholder/user data in examples
 
 ---
 
@@ -271,19 +462,23 @@ description: "Task list for implementing advanced role guides"
 
 - **Setup (Phase 1)**: No dependencies - can start immediately
 - **Foundational (Phase 2)**: Depends on Setup completion - NO BLOCKING TASKS (documentation project)
-- **User Stories (Phase 3-8)**: All can start immediately after Setup (Phase 1)
+- **User Stories (Phase 3-10)**: All can start immediately after Setup (Phase 1)
   - User stories can proceed in parallel (if staffed)
-  - Or sequentially in priority order (P1: US1, US2 → P2: US3, US4 → P3: US5, US6)
-- **Polish (Phase 9)**: Depends on all user stories being complete
+  - Or sequentially in priority order (P1: US1, US2 → P2: US3, US4 → P3: US5, US6, US7, US8, US9, US10)
+- **Polish (Phase 11)**: Depends on all user stories being complete
 
 ### User Story Dependencies
 
 - **User Story 1 (P1) - Senior Developer**: Can start after Setup (Phase 1) - No dependencies on other stories
-- **User Story 2 (P1) - Lead Engineer**: Can start after Setup (Phase 1) - No dependencies on other stories (creates lead-practices.md for all roles)
-- **User Story 3 (P2) - Principal Engineer**: Can start after Setup (Phase 1) - No dependencies on other stories (creates principal-practices.md for all roles)
+- **User Story 2 (P1) - Lead Engineer**: Can start after Setup (Phase 1) - No dependencies on other stories (creates lead-practices.md for all 8 roles)
+- **User Story 3 (P2) - Principal Engineer**: Can start after Setup (Phase 1) - No dependencies on other stories (creates principal-practices.md for all 8 roles)
 - **User Story 4 (P2) - Architect Content**: Can start after Setup (Phase 1) - Creates architect senior-practices.md (completes architect guide)
 - **User Story 5 (P3) - QA Content**: Can start after Setup (Phase 1) - Creates qa senior-practices.md (completes QA guide)
 - **User Story 6 (P3) - DevOps Content**: Can start after Setup (Phase 1) - Creates devops senior-practices.md (completes DevOps guide)
+- **User Story 7 (P3) - Product Owner Content**: Can start after Setup (Phase 1) - Creates product-owner senior-practices.md (completes Product Owner guide)
+- **User Story 8 (P3) - Product Manager Content**: Can start after Setup (Phase 1) - Creates product-manager senior-practices.md (completes Product Manager guide)
+- **User Story 9 (P3) - UI Designer Content**: Can start after Setup (Phase 1) - Creates ui-designer senior-practices.md (completes UI Designer guide)
+- **User Story 10 (P3) - UX Designer Content**: Can start after Setup (Phase 1) - Creates ux-designer senior-practices.md (completes UX Designer guide)
 
 ### Within Each User Story
 
@@ -294,37 +489,49 @@ description: "Task list for implementing advanced role guides"
 
 ### Parallel Opportunities
 
-- All Setup tasks (T001-T004) marked [P] can run in parallel
-- After Setup, all 6 user stories can be worked on in parallel by different team members
-- Within User Story 2 (Lead Engineer): All 4 role guide files can be created in parallel (T016-T019)
-- Within User Story 2: All "When to Use" sections can be added in parallel (T020-T023)
-- Within User Story 2: All framework sections can be added in parallel (T036-T039, T040-T043, T044-T047, T048-T051, T052-T055)
-- Within User Story 3 (Principal): All 4 role guide files can be created in parallel (T056-T059)
-- Within User Story 3: All sections can be added in parallel across all 4 roles
-- All Polish phase cross-reference updates (T126-T133) can run in parallel
+- All Setup tasks (T001-T004, T141-T144) marked [P] can run in parallel (8 directory creations)
+- After Setup, all 10 user stories can be worked on in parallel by different team members
+- Within User Story 2 (Lead Engineer): All 8 role guide files can be created in parallel (T016-T019, T189-T192)
+- Within User Story 2: All "When to Use" sections can be added in parallel (T020-T023, T193-T196)
+- Within User Story 2: All framework sections can be added in parallel across all 8 roles
+- Within User Story 3 (Principal): All 8 role guide files can be created in parallel (T056-T059, T229-T232)
+- Within User Story 3: All sections can be added in parallel across all 8 roles
+- All Polish phase cross-reference updates can run in parallel (T126-T133, T265-T272)
 
 ---
 
 ## Parallel Example: User Story 2 (Lead Engineer)
 
 ```bash
-# Launch all lead-practices.md file creations together:
+# Launch all lead-practices.md file creations together (8 roles):
 Task T016: "Create developer-guide lead-practices.md with frontmatter"
 Task T017: "Create architect-guide lead-practices.md with frontmatter"
 Task T018: "Create qa-guide lead-practices.md with frontmatter"
 Task T019: "Create devops-guide lead-practices.md with frontmatter"
+Task T189: "Create product-owner-guide lead-practices.md with frontmatter"
+Task T190: "Create product-manager-guide lead-practices.md with frontmatter"
+Task T191: "Create ui-designer-guide lead-practices.md with frontmatter"
+Task T192: "Create ux-designer-guide lead-practices.md with frontmatter"
 
-# Launch all "When to Use" sections together:
+# Launch all "When to Use" sections together (8 roles):
 Task T020: "Add When to Use section to developer-guide/advanced/lead-practices.md"
 Task T021: "Add When to Use section to architect-guide/advanced/lead-practices.md"
 Task T022: "Add When to Use section to qa-guide/advanced/lead-practices.md"
 Task T023: "Add When to Use section to devops-guide/advanced/lead-practices.md"
+Task T193: "Add When to Use section to product-owner-guide/advanced/lead-practices.md"
+Task T194: "Add When to Use section to product-manager-guide/advanced/lead-practices.md"
+Task T195: "Add When to Use section to ui-designer-guide/advanced/lead-practices.md"
+Task T196: "Add When to Use section to ux-designer-guide/advanced/lead-practices.md"
 
-# Launch all Technical Decision Frameworks sections together:
+# Launch all Decision Frameworks sections together (8 roles):
 Task T036: "Add Technical Decision Frameworks to developer-guide"
 Task T037: "Add Technical Decision Frameworks to architect-guide"
 Task T038: "Add Technical Decision Frameworks to qa-guide"
 Task T039: "Add Technical Decision Frameworks to devops-guide"
+Task T209: "Add Technical Decision Frameworks to product-owner-guide"
+Task T210: "Add Strategic Decision Frameworks to product-manager-guide"
+Task T211: "Add Design Decision Frameworks to ui-designer-guide"
+Task T212: "Add Research Decision Frameworks to ux-designer-guide"
 ```
 
 ---
@@ -333,7 +540,7 @@ Task T039: "Add Technical Decision Frameworks to devops-guide"
 
 ### MVP First (User Story 1 Only)
 
-1. Complete Phase 1: Setup (4 directory creation tasks)
+1. Complete Phase 1: Setup (8 directory creation tasks: 4 technical + 4 product/design)
 2. Complete Phase 2: Foundational (none - skip)
 3. Complete Phase 3: User Story 1 (developer senior-practices.md only)
 4. **STOP and VALIDATE**: Test User Story 1 independently - senior developers can access advanced patterns
@@ -343,46 +550,64 @@ Task T039: "Add Technical Decision Frameworks to devops-guide"
 
 ### Incremental Delivery
 
-1. Complete Setup → Directories ready
+1. Complete Setup → Directories ready for all 8 roles
 2. Add User Story 1 → Test independently → Deploy/Demo (MVP: Senior Developer patterns!)
-3. Add User Story 2 → Test independently → Deploy/Demo (Lead Engineer frameworks across all roles!)
-4. Add User Story 3 → Test independently → Deploy/Demo (Principal Engineer strategy!)
+3. Add User Story 2 → Test independently → Deploy/Demo (Lead Engineer frameworks across all 8 roles!)
+4. Add User Story 3 → Test independently → Deploy/Demo (Principal Engineer strategy across all 8 roles!)
 5. Add User Story 4 → Test independently → Deploy/Demo (Architect Senior complete!)
 6. Add User Story 5 → Test independently → Deploy/Demo (QA Senior complete!)
 7. Add User Story 6 → Test independently → Deploy/Demo (DevOps Senior complete!)
-8. Add Polish phase → Final cross-references and validation
-9. Each story adds value without breaking previous stories
+8. Add User Story 7 → Test independently → Deploy/Demo (Product Owner Senior complete!)
+9. Add User Story 8 → Test independently → Deploy/Demo (Product Manager Senior complete!)
+10. Add User Story 9 → Test independently → Deploy/Demo (UI Designer Senior complete!)
+11. Add User Story 10 → Test independently → Deploy/Demo (UX Designer Senior complete!)
+12. Add Polish phase → Final cross-references and validation
+13. Each story adds value without breaking previous stories
 
 ### Parallel Team Strategy
 
-With multiple content authors (recommended 4 authors):
+With multiple content authors (recommended 8 authors - one per role):
 
 1. All authors complete Setup together (or one author does Setup for all)
 2. Once Setup is done:
-   - **Author 1**: User Stories 1, 2, 3 for Developer Guide (senior, lead, principal)
-   - **Author 2**: User Stories 2, 3, 4 for Architect Guide (lead, principal, senior)
-   - **Author 3**: User Stories 2, 3, 5 for QA Guide (lead, principal, senior)
-   - **Author 4**: User Stories 2, 3, 6 for DevOps Guide (lead, principal, senior)
+   - **Author 1 (Technical)**: User Stories 1, 2, 3 for Developer Guide (senior, lead, principal)
+   - **Author 2 (Technical)**: User Stories 2, 3, 4 for Architect Guide (lead, principal, senior)
+   - **Author 3 (Technical)**: User Stories 2, 3, 5 for QA Guide (lead, principal, senior)
+   - **Author 4 (Technical)**: User Stories 2, 3, 6 for DevOps Guide (lead, principal, senior)
+   - **Author 5 (Product)**: User Stories 2, 3, 7 for Product Owner Guide (lead, principal, senior)
+   - **Author 6 (Product)**: User Stories 2, 3, 8 for Product Manager Guide (lead, principal, senior)
+   - **Author 7 (Design)**: User Stories 2, 3, 9 for UI Designer Guide (lead, principal, senior)
+   - **Author 8 (Design)**: User Stories 2, 3, 10 for UX Designer Guide (lead, principal, senior)
 3. Week 4-5: Cross-reference updates and final review (all authors)
 
 **Timeline Estimate**: 
-- Single author: 8-9 weeks (48-72 hours)
-- 4 parallel authors: 3-4 weeks (12-18 hours per author)
+- Single author: 14-16 weeks (84-112 hours)
+- 8 parallel authors: 4-5 weeks (12-18 hours per author)
+- 4 parallel authors: 7-8 weeks (28-36 hours per author)
 
 ---
 
 ## Task Summary
 
-- **Total Tasks**: 140
-- **Setup Phase**: 4 tasks
+- **Total Tasks**: 279
+- **Setup Phase**: 8 tasks (4 technical roles + 4 product/design roles)
 - **User Story 1 (Senior Developer)**: 11 tasks
-- **User Story 2 (Lead Engineer)**: 40 tasks (across 4 role guides)
-- **User Story 3 (Principal Engineer)**: 36 tasks (across 4 role guides)
+- **User Story 2 (Lead Engineer)**: 80 tasks (across 8 role guides: 4 technical + 4 product/design)
+- **User Story 3 (Principal Engineer)**: 72 tasks (across 8 role guides: 4 technical + 4 product/design)
 - **User Story 4 (Architect Content)**: 12 tasks
 - **User Story 5 (QA Content)**: 11 tasks
 - **User Story 6 (DevOps Content)**: 11 tasks
-- **Polish Phase**: 15 tasks
-- **Parallelizable Tasks**: 115 marked with [P]
+- **User Story 7 (Product Owner Content)**: 11 tasks
+- **User Story 8 (Product Manager Content)**: 11 tasks
+- **User Story 9 (UI Designer Content)**: 11 tasks
+- **User Story 10 (UX Designer Content)**: 11 tasks
+- **Polish Phase**: 28 tasks (expanded to cover 8 roles)
+- **Parallelizable Tasks**: Significantly increased with 4 additional roles - all marked with [P]
+
+**Role Guide Breakdown**:
+- **Technical Roles** (Developer, Architect, QA, DevOps): 12 documents (3 levels × 4 roles)
+- **Product/Design Roles** (Product Owner, Product Manager, UI Designer, UX Designer): 12 documents (3 levels × 4 roles)
+- **Total Documents**: 24 advanced practice documents
 
 ---
 
@@ -395,6 +620,9 @@ With multiple content authors (recommended 4 authors):
 - Commit after each task or logical group
 - Stop at any checkpoint to validate story independently
 - Refer to contracts/ templates and quickstart.md for detailed implementation guidance
-- All code examples must demonstrate AI tool usage (R.I.C.E. prompts)
+- **Technical roles** (Developer, Architect, QA, DevOps): All code examples must demonstrate AI tool usage (R.I.C.E. prompts)
+- **Product/Design roles** (Product Owner, Product Manager, UI Designer, UX Designer): All examples must use non-technical AI tools and demonstrate domain-specific work (no code examples)
 - All case studies must use S.A.R. format (Situation, Action, Result)
 - All frameworks must include decision criteria and organizational scope
+- Product/Design roles use `senior-practices-product-design-template.md` for structure and formatting
+- Technical roles use standard `senior-practices-template.md` for structure and formatting
