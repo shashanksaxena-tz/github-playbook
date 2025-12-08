@@ -66,7 +66,9 @@ Create **`advanced/` directory** within each role guide, containing three files 
 
 ### Implementation Details
 ```text
-Paths for all 12 new documents:
+Paths for all 24 new documents:
+
+Technical Roles (code-focused):
 - playbook/content/developer-guide/advanced/senior-practices.md
 - playbook/content/developer-guide/advanced/lead-practices.md
 - playbook/content/developer-guide/advanced/principal-practices.md
@@ -79,6 +81,22 @@ Paths for all 12 new documents:
 - playbook/content/devops-guide/advanced/senior-practices.md
 - playbook/content/devops-guide/advanced/lead-practices.md
 - playbook/content/devops-guide/advanced/principal-practices.md
+
+Product Roles (backlog/strategy-focused):
+- playbook/content/product-owner-guide/advanced/senior-practices.md
+- playbook/content/product-owner-guide/advanced/lead-practices.md
+- playbook/content/product-owner-guide/advanced/principal-practices.md
+- playbook/content/product-manager-guide/advanced/senior-practices.md
+- playbook/content/product-manager-guide/advanced/lead-practices.md
+- playbook/content/product-manager-guide/advanced/principal-practices.md
+
+Design Roles (design/research-focused):
+- playbook/content/ui-designer-guide/advanced/senior-practices.md
+- playbook/content/ui-designer-guide/advanced/lead-practices.md
+- playbook/content/ui-designer-guide/advanced/principal-practices.md
+- playbook/content/ux-designer-guide/advanced/senior-practices.md
+- playbook/content/ux-designer-guide/advanced/lead-practices.md
+- playbook/content/ux-designer-guide/advanced/principal-practices.md
 ```
 
 ---
@@ -349,6 +367,66 @@ Clear boundaries between levels:
 1. **Monolithic guide**: Rejected - hard to maintain, poor user experience
 2. **Dynamic content generation**: Rejected - adds complexity without clear benefit
 3. **Database-backed CMS**: Rejected - over-engineering for static content
+
+---
+
+## Decision 7: AI Tool Selection for Non-Technical Roles
+
+### Decision
+Use **role-appropriate AI tools** for product and design roles, not limiting to GitHub Copilot:
+
+#### Product Owner & Product Manager
+- **Primary Tools**: ChatGPT, Claude, Gemini (for text generation, analysis, strategic thinking)
+- **Use Cases**:
+  - User story generation and refinement
+  - Acceptance criteria templates
+  - Market research synthesis
+  - Competitive analysis
+  - Feature prioritization frameworks
+  - Stakeholder communication templates
+
+#### UI Designer
+- **Primary Tools**: 
+  - Figma AI (design system generation, layout suggestions)
+  - Midjourney / DALL-E (visual concept exploration)
+  - ChatGPT / Claude (design system documentation, accessibility guidelines)
+- **Use Cases**:
+  - Design system component variations
+  - Responsive layout exploration
+  - Accessibility pattern generation
+  - Visual design exploration
+  - Color palette generation
+
+#### UX Designer
+- **Primary Tools**:
+  - ChatGPT / Claude (research synthesis, analysis)
+  - Miro AI / FigJam AI (journey mapping, workshop facilitation)
+  - Survey/research analysis tools
+- **Use Cases**:
+  - User journey map generation
+  - Persona creation and refinement
+  - Research question development
+  - Usability test plan templates
+  - Interview guide generation
+  - Research synthesis and insights
+
+### Rationale
+- **Relevance**: GitHub Copilot is code-focused; product/design roles need different tools
+- **Practicality**: Examples must reflect actual workflows of these professionals
+- **Value**: Shows how AI enhances product and design work, not just development
+- **Adoption**: Most product/design professionals already use ChatGPT, Claude, or Figma AI
+
+### Alternatives Considered
+1. **GitHub Copilot only**: Rejected - not relevant to non-coding roles
+2. **No AI tool specification**: Rejected - examples wouldn't be actionable
+3. **Comprehensive tool comparison**: Rejected - too detailed, would date quickly
+
+### Implementation Standards
+- Always specify which AI tool is being used in examples
+- Focus on prompting techniques that transfer across similar tools
+- Show human refinement process (not just raw AI output)
+- Emphasize AI as assistant, not replacement for domain expertise
+- Include disclaimers about tool evolution and alternatives
 
 ---
 

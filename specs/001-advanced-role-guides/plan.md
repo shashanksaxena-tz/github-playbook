@@ -7,7 +7,7 @@
 
 ## Summary
 
-This feature extends the GitHub Copilot Playbook by adding advanced-level documentation for Senior (5-8 years), Lead (8-12 years), and Principal (12+ years) engineers across all four role guides (Developer, Architect, QA, DevOps). The implementation will create 12 new markdown documents (3 experience levels × 4 roles) following the existing guide structure, including detailed code examples, team-scale case studies, and strategic frameworks. The content will use the existing frontmatter format, maintain cross-references between experience levels, and integrate seamlessly with the current documentation architecture.
+This feature extends the GitHub Copilot Playbook by adding advanced-level documentation for Senior (5-8 years), Lead (8-12 years), and Principal (12+ years) professionals across all eight role guides (Developer, Architect, QA, DevOps, Product Owner, Product Manager, UI Designer, UX Designer). The implementation will create 24 new markdown documents (3 experience levels × 8 roles) following the existing guide structure, including detailed examples, team-scale case studies, and strategic frameworks. The content will use the existing frontmatter format, maintain cross-references between experience levels, and integrate seamlessly with the current documentation architecture. Product and design roles will focus on non-technical AI usage patterns specific to their domains (backlog management, user research, design exploration, etc.).
 
 ## Technical Context
 
@@ -24,11 +24,12 @@ This feature extends the GitHub Copilot Playbook by adding advanced-level docume
   - Ensure cross-references remain valid
   - Keep content focused on AI-assisted development patterns (not generic programming)
 **Scale/Scope**: 
-  - 12 new markdown documents (3 experience levels × 4 role guides)
-  - 3-5 code examples per senior-practices.md (16 total examples minimum)
-  - 3-5 case studies per lead-practices.md (16 total case studies minimum)
+  - 24 new markdown documents (3 experience levels × 8 role guides)
+  - 3-5 practical examples per senior-practices.md (technical roles: code examples; product/design roles: domain-specific examples like user story templates, design patterns)
+  - 3-5 case studies per lead-practices.md (48 total case studies minimum across all roles)
   - Strategic frameworks in all principal-practices.md files
   - Cross-reference updates to existing beginner/intermediate content
+  - Product/design role content focuses on non-technical AI usage (ChatGPT for strategy, Claude for research, AI-assisted design tools, etc.)
 
 ## Constitution Check
 
@@ -151,10 +152,38 @@ playbook/content/
 │       ├── lead-practices.md              # NEW
 │       └── principal-practices.md         # NEW
 │
+├── product-owner-guide/                   # NEW ROLE
+│   ├── getting-started/                   # (assumed to exist or TBD)
+│   └── advanced/                          # NEW
+│       ├── senior-practices.md            # NEW - AI-assisted backlog management
+│       ├── lead-practices.md              # NEW - product team coordination
+│       └── principal-practices.md         # NEW - product strategy frameworks
+│
+├── product-manager-guide/                 # NEW ROLE
+│   ├── getting-started/                   # (assumed to exist or TBD)
+│   └── advanced/                          # NEW
+│       ├── senior-practices.md            # NEW - AI-assisted product strategy
+│       ├── lead-practices.md              # NEW - cross-functional PM leadership
+│       └── principal-practices.md         # NEW - portfolio management frameworks
+│
+├── ui-designer-guide/                     # NEW ROLE
+│   ├── getting-started/                   # (assumed to exist or TBD)
+│   └── advanced/                          # NEW
+│       ├── senior-practices.md            # NEW - AI-assisted UI design
+│       ├── lead-practices.md              # NEW - design system leadership
+│       └── principal-practices.md         # NEW - design org strategy
+│
+├── ux-designer-guide/                     # NEW ROLE
+│   ├── getting-started/                   # (assumed to exist or TBD)
+│   └── advanced/                          # NEW
+│       ├── senior-practices.md            # NEW - AI-assisted UX research
+│       ├── lead-practices.md              # NEW - UX team practices
+│       └── principal-practices.md         # NEW - UX strategy frameworks
+│
 └── shared/                                # EXISTING - may add cross-references
 ```
 
-**Structure Decision**: Using "advanced" directory pattern to match existing "getting-started", "daily-usage", and "examples" directories. Each role guide receives identical three-file structure (senior, lead, principal) to maintain consistency and predictability across all guides.
+**Structure Decision**: Using "advanced" directory pattern to match existing "getting-started", "daily-usage", and "examples" directories. Each role guide receives identical three-file structure (senior, lead, principal) to maintain consistency and predictability across all guides. Product Owner, Product Manager, UI Designer, and UX Designer guides focus on domain-specific AI tool usage (non-code-centric).
 
 ## Complexity Tracking
 

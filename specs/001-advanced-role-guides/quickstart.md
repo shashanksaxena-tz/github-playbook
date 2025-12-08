@@ -1,17 +1,22 @@
 # Quickstart: Implementing Advanced Role Documentation
 
-**Feature**: Advanced Role Documentation for Senior, Lead, and Principal Engineers  
+**Feature**: Advanced Role Documentation for Senior, Lead, and Principal Professionals  
 **Date**: 2025-12-08  
 **For**: Content authors and contributors implementing the advanced guides
 
 ## Overview
 
-This guide provides step-by-step instructions for creating the 12 new advanced practice documents (3 experience levels × 4 role guides) for the GitHub Copilot Playbook.
+This guide provides step-by-step instructions for creating the 24 new advanced practice documents (3 experience levels × 8 role guides) for the GitHub Copilot Playbook, including 4 technical roles and 4 product/design roles.
 
 **Time Required**: 
 - Per document: 4-6 hours (research, writing, review)
-- Total project: 48-72 hours for all 12 documents
+- Total project: 96-144 hours for all 24 documents
 - Can be parallelized across multiple authors
+
+**Role Categories**:
+- **Technical Roles** (4): Developer, Architect, QA, DevOps - focus on code and technical patterns
+- **Product Roles** (2): Product Owner, Product Manager - focus on backlog, strategy, stakeholder management
+- **Design Roles** (2): UI Designer, UX Designer - focus on visual/interaction design and user research
 
 ---
 
@@ -25,7 +30,10 @@ Before starting, ensure you have:
 - ✅ Understand the data model: `specs/001-advanced-role-guides/data-model.md`
 - ✅ Reviewed existing guides in `playbook/content/`
 - ✅ 5-12+ years of professional experience in the target role (or equivalent expertise)
-- ✅ Experience using GitHub Copilot or similar AI development tools
+- ✅ Experience using AI tools relevant to your role:
+  - Technical roles: GitHub Copilot, Copilot Chat
+  - Product roles: ChatGPT, Claude, Gemini
+  - Design roles: Figma AI, Midjourney, ChatGPT/Claude for documentation
 
 ---
 
@@ -77,11 +85,21 @@ Each advanced practice document must have:
 ```bash
 cd /home/runner/work/github-playbook/github-playbook
 
-# Create advanced directories for all four role guides
+# Create advanced directories for all eight role guides
+
+# Technical roles
 mkdir -p playbook/content/developer-guide/advanced
 mkdir -p playbook/content/architect-guide/advanced
 mkdir -p playbook/content/qa-guide/advanced
 mkdir -p playbook/content/devops-guide/advanced
+
+# Product roles
+mkdir -p playbook/content/product-owner-guide/advanced
+mkdir -p playbook/content/product-manager-guide/advanced
+
+# Design roles
+mkdir -p playbook/content/ui-designer-guide/advanced
+mkdir -p playbook/content/ux-designer-guide/advanced
 ```
 
 #### 1.2 Copy Templates
@@ -99,27 +117,57 @@ cd specs/001-advanced-role-guides/contracts
 ### Phase 2: Create Documents (4-6 hours per document)
 
 Work on one document at a time. Recommended order:
-1. **Developer Senior** (establishes patterns)
+
+**Technical Roles** (use standard templates with code examples):
+1. **Developer Senior** (establishes code-focused patterns)
 2. **Developer Lead** (builds on senior patterns)
 3. **Developer Principal** (completes developer guide)
 4. Repeat for Architect, QA, DevOps
 
+**Product & Design Roles** (use product-design template with domain examples):
+5. **Product Owner Senior** (establishes product patterns)
+6. **Product Owner Lead & Principal**
+7. **Product Manager Senior, Lead, Principal**
+8. **UI Designer Senior, Lead, Principal**
+9. **UX Designer Senior, Lead, Principal**
+
 #### 2.1 Choose Your Document
 
 Select which document to create:
-- `playbook/content/developer-guide/advanced/senior-practices.md`
-- `playbook/content/developer-guide/advanced/lead-practices.md`
-- `playbook/content/developer-guide/advanced/principal-practices.md`
-- (and so on for architect, qa, devops)
+
+**Technical Roles**:
+- `playbook/content/developer-guide/advanced/[senior|lead|principal]-practices.md`
+- `playbook/content/architect-guide/advanced/[senior|lead|principal]-practices.md`
+- `playbook/content/qa-guide/advanced/[senior|lead|principal]-practices.md`
+- `playbook/content/devops-guide/advanced/[senior|lead|principal]-practices.md`
+
+**Product Roles**:
+- `playbook/content/product-owner-guide/advanced/[senior|lead|principal]-practices.md`
+- `playbook/content/product-manager-guide/advanced/[senior|lead|principal]-practices.md`
+
+**Design Roles**:
+- `playbook/content/ui-designer-guide/advanced/[senior|lead|principal]-practices.md`
+- `playbook/content/ux-designer-guide/advanced/[senior|lead|principal]-practices.md`
 
 #### 2.2 Create File with Frontmatter
 
 Copy the appropriate template from `contracts/` and customize:
 
+**For Technical Roles** (Developer, Architect, QA, DevOps):
+- Use: `senior-practices-template.md`, `lead-practices-template.md`, or `principal-practices-template.md`
+
+**For Product & Design Roles** (Product Owner, Product Manager, UI Designer, UX Designer):
+- Use: `senior-practices-product-design-template.md` (for senior level)
+- Use: `lead-practices-template.md` (adapt for product/design context)
+- Use: `principal-practices-template.md` (adapt for product/design context)
+
 ```bash
 # Example for developer-senior-practices.md
 cd /home/runner/work/github-playbook/github-playbook
 touch playbook/content/developer-guide/advanced/senior-practices.md
+
+# Example for product-owner-senior-practices.md
+touch playbook/content/product-owner-guide/advanced/senior-practices.md
 ```
 
 **Customize frontmatter**:
@@ -127,7 +175,7 @@ touch playbook/content/developer-guide/advanced/senior-practices.md
 ---
 id: developer-senior-practices  # Format: {role}-{level}-practices
 title: "Advanced Development Patterns for Senior Engineers"
-role: developer  # developer | architect | qa | devops
+role: developer  # developer | architect | qa | devops | product-owner | product-manager | ui-designer | ux-designer
 experience_level: senior  # senior | lead | principal
 workflow_stage: advanced
 description: "Advanced AI-assisted development patterns, mentorship strategies, and code review practices for senior developers with 5-8 years experience"
@@ -171,11 +219,22 @@ Help readers self-select. Include:
 
 #### 2.4 Write Main Content
 
-**For Senior Practices**:
+**For Senior Practices (Technical Roles)**:
 - Create 3-5 advanced code examples
 - Each example must show AI tool usage (include prompts)
 - Include inline code annotations (✅ ⚠️ 🔒)
 - Explain benefits, pitfalls, and success metrics
+
+**For Senior Practices (Product & Design Roles)**:
+- Create 3-5 domain-specific examples (NOT code examples)
+- Show AI tool usage (ChatGPT, Claude, Figma AI, etc.)
+- Include prompt examples and generated outputs
+- Demonstrate human refinement process
+- Examples:
+  - Product Owner: User story generation, acceptance criteria, sprint planning
+  - Product Manager: Market research synthesis, feature prioritization
+  - UI Designer: Design system components, layout exploration
+  - UX Designer: Journey maps, persona generation, research plans
 
 **For Lead Practices**:
 - Create 3-5 team adoption case studies
@@ -192,6 +251,8 @@ Help readers self-select. Include:
 #### 2.5 Add Role-Specific Sections
 
 Customize sections based on role:
+
+**Technical Roles:**
 
 **Developer**:
 - Focus on code generation, testing, refactoring
@@ -212,6 +273,32 @@ Customize sections based on role:
 - Focus on infrastructure as code, deployment automation
 - Operational excellence patterns
 - Infrastructure governance
+
+**Product & Design Roles:**
+
+**Product Owner**:
+- Focus on backlog management, user story quality
+- Stakeholder communication patterns
+- Sprint planning optimization
+- AI tools: ChatGPT, Claude for story generation
+
+**Product Manager**:
+- Focus on product strategy, market analysis
+- Feature prioritization frameworks
+- Go-to-market planning
+- AI tools: ChatGPT, Claude for research synthesis
+
+**UI Designer**:
+- Focus on visual design, design systems
+- Accessibility compliance patterns
+- Responsive design exploration
+- AI tools: Figma AI, Midjourney, ChatGPT for documentation
+
+**UX Designer**:
+- Focus on user research, journey mapping
+- Usability testing frameworks
+- Interaction design patterns
+- AI tools: ChatGPT, Claude, Miro AI for research synthesis
 
 #### 2.6 Add Metrics and Success Criteria
 

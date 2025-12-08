@@ -17,10 +17,11 @@ This document defines the content entities, relationships, and validation rules 
 **Description**: A collection of documentation for a specific job function using GitHub Copilot and AI tools.
 
 **Attributes**:
-- `role_name`: string (developer | architect | qa | devops)
+- `role_name`: string (developer | architect | qa | devops | product-owner | product-manager | ui-designer | ux-designer)
 - `base_path`: string (e.g., "playbook/content/developer-guide/")
 - `existing_sections`: array of strings (e.g., ["getting-started", "daily-usage", "examples"])
 - `advanced_section_path`: string (e.g., "playbook/content/developer-guide/advanced/")
+- `role_category`: enum (technical | product | design)
 
 **Relationships**:
 - Contains multiple **Advanced Practice Documents** (3 per role)
@@ -28,16 +29,24 @@ This document defines the content entities, relationships, and validation rules 
 - May cross-reference other **Role Guides**
 
 **Validation Rules**:
-- Role name must be one of: developer, architect, qa, devops
+- Role name must be one of: developer, architect, qa, devops, product-owner, product-manager, ui-designer, ux-designer
 - Base path must exist in repository
 - Advanced section path = base_path + "advanced/"
 - Must contain exactly 3 advanced practice documents
+- Role category determines content focus:
+  - technical: code examples, technical patterns
+  - product: backlog management, strategy, stakeholder communication
+  - design: design systems, user research, visual/interaction patterns
 
-**Instances**: 4 total
-- Developer Guide
-- Architect Guide  
-- QA Guide
-- DevOps Guide
+**Instances**: 8 total
+- Developer Guide (technical)
+- Architect Guide (technical)
+- QA Guide (technical)
+- DevOps Guide (technical)
+- Product Owner Guide (product)
+- Product Manager Guide (product)
+- UI Designer Guide (design)
+- UX Designer Guide (design)
 
 ---
 
@@ -94,8 +103,6 @@ This document defines the content entities, relationships, and validation rules 
 - References other **Advanced Practice Documents**
 
 **Validation Rules**:
-- File name must match pattern: `{level}-practices.md`
-- Must have valid frontmatter (see Frontmatter Metadata validation)
 - Senior documents must have 3-5 Code Examples
 - Lead documents must have 3-5 Case Studies
 - Principal documents must have strategic Frameworks
@@ -103,8 +110,12 @@ This document defines the content entities, relationships, and validation rules 
 - Must include "Measuring Success" section
 - Must include "Related Content" section
 - All cross-references must point to existing documents
+- Content type must match role category:
+  - Technical roles: code-focused examples with prompts
+  - Product roles: backlog/strategy examples with AI tool usage (ChatGPT, Claude, etc.)
+  - Design roles: design pattern examples with AI-assisted design workflows
 
-**Instances**: 12 total (3 levels × 4 roles)
+**Instances**: 24 total (3 levels × 8 roles)
 
 ---
 
@@ -116,7 +127,7 @@ This document defines the content entities, relationships, and validation rules 
 ```yaml
 id: string                    # Unique identifier
 title: string                 # Display title
-role: enum                    # developer | architect | qa | devops
+role: enum                    # developer | architect | qa | devops | product-owner | product-manager | ui-designer | ux-designer
 experience_level: enum        # senior | lead | principal
 workflow_stage: string        # Always "advanced" for these docs
 description: string           # 50-150 characters
@@ -130,10 +141,10 @@ last_updated: date            # YYYY-MM-DD format
 - References other documents via `cross_references` array
 
 **Validation Rules**:
-- `id` format: `{role}-{level}-practices` (e.g., "developer-senior-practices")
+- `id` format: `{role}-{level}-practices` (e.g., "developer-senior-practices", "product-owner-senior-practices")
 - `id` must be unique across all documents
 - `title` must be 10-100 characters
-- `role` must match one of 4 valid roles
+- `role` must match one of 8 valid roles
 - `experience_level` must match one of 3 valid levels
 - `workflow_stage` must be "advanced"
 - `description` must be 50-150 characters
@@ -221,7 +232,7 @@ last_updated: 2025-12-08
 
 ### 6. Code Example
 
-**Description**: An annotated code block demonstrating advanced AI-assisted development patterns.
+**Description**: An annotated code block demonstrating advanced AI-assisted development patterns (for technical roles).
 
 **Attributes**:
 - `pattern_name`: string (descriptive name)
@@ -234,16 +245,17 @@ last_updated: 2025-12-08
 - `success_metric`: string (measurable outcome)
 
 **Relationships**:
-- Contained in **Advanced Practice Document** (senior level only)
+- Contained in **Advanced Practice Document** (senior level only, technical roles)
 - Part of **Content Section** (Advanced Technical Patterns)
 
 **Validation Rules**:
-- Senior documents must have 3-5 Code Examples
+- Senior documents for technical roles must have 3-5 Code Examples
 - Each example must demonstrate AI tool usage (not generic code)
 - Code must be syntactically valid
 - Must include all required attributes (pattern_name, context, prompt, code, benefits, pitfalls, metrics)
 - Code must demonstrate secure patterns (no hardcoded secrets, proper validation, etc.)
 - Language must match role context (Python/JS/Java for developers, Terraform/YAML for DevOps, etc.)
+- **Note**: Product and design roles use Domain Example entity instead
 
 **Format Template**:
 ```markdown
@@ -274,6 +286,73 @@ last_updated: 2025-12-08
 **Measuring Success**:
 - [Metric]
 ```
+
+---
+
+### 6A. Domain Example
+
+**Description**: A practical demonstration of AI-assisted work patterns for non-technical roles (Product Owner, Product Manager, UI Designer, UX Designer).
+
+**Attributes**:
+- `pattern_name`: string (descriptive name)
+- `context`: string (when to use)
+- `prompt_example`: string (actual prompt to AI tool like ChatGPT, Claude, Midjourney, etc.)
+- `ai_tool`: string (which AI tool: ChatGPT, Claude, Midjourney, Figma AI, etc.)
+- `example_output`: string (generated content with annotations)
+- `output_format`: string (user story, persona, wireframe description, research synthesis, etc.)
+- `benefits`: array of strings (why it works)
+- `pitfalls`: array of strings (anti-patterns to avoid)
+- `success_metric`: string (measurable outcome)
+
+**Relationships**:
+- Contained in **Advanced Practice Document** (senior level only, product/design roles)
+- Part of **Content Section** (Advanced Domain Patterns)
+
+**Validation Rules**:
+- Senior documents for product/design roles must have 3-5 Domain Examples
+- Each example must demonstrate AI tool usage specific to the domain
+- Must NOT include code examples (use appropriate domain artifacts instead)
+- Must include all required attributes (pattern_name, context, prompt, ai_tool, output, benefits, pitfalls, metrics)
+- Examples must be practical and production-ready
+- AI tool choice must be appropriate for the task
+
+**Format Template**:
+```markdown
+## Pattern Name: [Descriptive Name]
+
+**Context**: [When to use this pattern]
+
+**AI Tool**: [ChatGPT-4 | Claude | Midjourney | Figma AI | etc.]
+
+**Prompt Example**:
+```text
+[Actual prompt used with the AI tool]
+```
+
+**Generated Output**:
+```
+[Output with annotations]
+✅ Good practice: [explanation]
+⚠️ Watch out: [warning]
+💡 Human refinement: [what to adjust]
+```
+
+**Why This Works**:
+- ✅ [Benefit 1]
+- ✅ [Benefit 2]
+
+**Common Pitfalls**:
+- ❌ [Anti-pattern to avoid]
+
+**Measuring Success**:
+- [Specific metric or outcome]
+```
+
+**Example Applications by Role**:
+- **Product Owner**: AI-generated user stories, acceptance criteria templates, sprint planning assistance
+- **Product Manager**: Market research synthesis, competitive analysis, feature prioritization frameworks
+- **UI Designer**: Design system component variations, responsive layout exploration, accessibility pattern generation
+- **UX Designer**: User journey maps, persona generation, research question development, usability test plans
 
 ---
 
@@ -426,12 +505,13 @@ last_updated: 2025-12-08
 ## Entity Relationship Diagram
 
 ```text
-Role Guide (4)
-    └── contains ──> Advanced Practice Document (12)
+Role Guide (8)
+    └── contains ──> Advanced Practice Document (24)
             ├── has ──> Experience Level (1 of 3)
             ├── contains ──> Frontmatter Metadata (1)
             ├── contains ──> Content Section (6-8)
-            │       └── may contain ──> Code Example (3-5, senior only)
+            │       └── may contain ──> Code Example (3-5, senior technical roles only)
+            │       └── may contain ──> Domain Example (3-5, senior product/design roles only)
             │       └── may contain ──> Case Study (3-5, lead only)
             │       └── may contain ──> Framework (multiple, principal only)
             └── references via ──> Cross Reference (2+)

@@ -10,12 +10,14 @@ id:
   type: string
   required: true
   format: "{role}-{level}-practices"
-  pattern: "^(developer|architect|qa|devops)-(senior|lead|principal)-practices$"
+  pattern: "^(developer|architect|qa|devops|product-owner|product-manager|ui-designer|ux-designer)-(senior|lead|principal)-practices$"
   description: "Unique identifier for the document"
   examples:
     - "developer-senior-practices"
     - "architect-lead-practices"
     - "qa-principal-practices"
+    - "product-owner-senior-practices"
+    - "ui-designer-lead-practices"
 
 title:
   type: string
@@ -36,6 +38,10 @@ role:
     - architect
     - qa
     - devops
+    - product-owner
+    - product-manager
+    - ui-designer
+    - ux-designer
   description: "The role this document is written for"
 
 experience_level:
@@ -102,7 +108,7 @@ last_updated:
 
 ### ID Validation
 - Must follow format: `{role}-{level}-practices`
-- Role must be one of: developer, architect, qa, devops
+- Role must be one of: developer, architect, qa, devops, product-owner, product-manager, ui-designer, ux-designer
 - Level must be one of: senior, lead, principal
 - Must be unique across all documents in the repository
 
@@ -237,6 +243,53 @@ last_updated: 2025-12-08
 ---
 ```
 
+### Product Owner Senior Practices
+```yaml
+---
+id: product-owner-senior-practices
+title: "Advanced Product Ownership Patterns for Senior Product Owners"
+role: product-owner
+experience_level: senior
+workflow_stage: advanced
+description: "Advanced AI-assisted backlog management, user story generation, and stakeholder communication for senior product owners with 5-8 years experience"
+cross_references:
+  - product-owner-guide-introduction
+  - product-owner-lead-practices
+  - product-manager-senior-practices
+tags:
+  - backlog-management
+  - user-stories
+  - senior-product-owner
+  - ai-assisted-product-work
+  - stakeholder-communication
+last_updated: 2025-12-08
+---
+```
+
+### UI Designer Lead Practices
+```yaml
+---
+id: ui-designer-lead-practices
+title: "Design System Leadership for Lead UI Designers"
+role: ui-designer
+experience_level: lead
+workflow_stage: advanced
+description: "Team-scale design system adoption, cross-functional design collaboration, and visual design governance for lead UI designers with 8-12 years experience"
+cross_references:
+  - ui-designer-senior-practices
+  - ui-designer-principal-practices
+  - ux-designer-lead-practices
+  - ui-designer-guide-introduction
+tags:
+  - design-systems
+  - team-leadership
+  - lead-ui-designer
+  - visual-design-governance
+  - cross-functional-design
+last_updated: 2025-12-08
+---
+```
+
 ## Automated Validation
 
 This schema can be validated using tools like:
@@ -262,8 +315,8 @@ def validate_frontmatter(document_path):
     assert 'last_updated' in frontmatter
     
     # Format checks
-    assert re.match(r'^(developer|architect|qa|devops)-(senior|lead|principal)-practices$', frontmatter['id'])
-    assert frontmatter['role'] in ['developer', 'architect', 'qa', 'devops']
+    assert re.match(r'^(developer|architect|qa|devops|product-owner|product-manager|ui-designer|ux-designer)-(senior|lead|principal)-practices$', frontmatter['id'])
+    assert frontmatter['role'] in ['developer', 'architect', 'qa', 'devops', 'product-owner', 'product-manager', 'ui-designer', 'ux-designer']
     assert frontmatter['experience_level'] in ['senior', 'lead', 'principal']
     assert frontmatter['workflow_stage'] == 'advanced'
     assert 10 <= len(frontmatter['title']) <= 100
