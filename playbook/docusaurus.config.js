@@ -59,10 +59,16 @@ const config = {
       navbar: {
         title: 'AI-Native SDLC Playbook',
         logo: {
-          alt: 'Playbook Logo',
-          src: 'img/logo.svg',
+          alt: 'Taazaa Logo',
+          src: 'img/logo.png',
         },
         items: [
+          {
+            type: 'doc',
+            docId: 'index',
+            position: 'left',
+            label: 'Home',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'developerSidebar',
