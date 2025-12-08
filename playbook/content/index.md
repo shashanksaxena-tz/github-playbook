@@ -7,7 +7,7 @@ description: Organizational guide for standardizing AI tool adoption across deve
 
 # GitHub Copilot & AI-Native SDLC Playbook
 
-Welcome to the **Organizational guide for standardizing AI tool** - your comprehensive organizational guide for standardizing AI tool adoption and maximizing productivity with GitHub Copilot and other AI development tools.
+Welcome to the **AI-Native SDLC Playbook** - your comprehensive organizational guide for standardizing AI tool adoption and maximizing productivity with GitHub Copilot and other AI development tools.
 
 ## 🎯 What is This Playbook?
 
@@ -15,31 +15,47 @@ This playbook provides role-specific guidance, best practices, and standards for
 
 ## 👥 Role-Based Guides
 
-### 👨‍💻 [Developer Guide](developer-guide/getting-started/introduction)
+### 👨‍💻 Developer Guide
 Learn how to use GitHub Copilot effectively for daily development tasks, code completion, test generation, and refactoring.
 
-### 🏗️ [Architect Guide](architect-guide/getting-started/introduction)
+**Get Started**: Navigate to the Developer Guide from the menu above.
+
+### 🏗️ Architect Guide
 Establish standards, governance policies, and best practices for AI tool adoption across your organization.
 
-### 🧪 [QA Guide](qa-guide/getting-started/introduction)
+**Get Started**: Navigate to the Architect Guide from the menu above.
+
+### 🧪 QA Guide
 Discover how to leverage AI tools for test generation, test maintenance, and quality assurance workflows.
 
-### 🚀 [DevOps Guide](devops-guide/getting-started/introduction)
+**Get Started**: Navigate to the QA Guide from the menu above.
+
+### 🚀 DevOps Guide
 Learn how to use AI tools for infrastructure automation, CI/CD pipelines, and deployment workflows.
+
+**Get Started**: Navigate to the DevOps Guide from the menu above.
 
 ## 📚 Shared Content
 
-### [Prompt Engineering](shared/prompt-engineering/introduction)
+### Prompt Engineering
 Master the art of writing effective prompts and using frameworks like RICE for better AI interactions.
 
-### [AI-Native SDLC](shared/ai-native-sdlc/workflows)
+**Explore**: Navigate to Shared Content → Prompt Engineering from the menu above.
+
+### AI-Native SDLC
 Explore workflows and methodologies for building AI-native software development lifecycles.
 
-### [Security & Compliance](shared/security-compliance/overview)
+**Explore**: Navigate to Shared Content → AI-Native SDLC from the menu above.
+
+### Security & Compliance
 Understand security considerations and compliance requirements when using AI tools.
 
-### [AI Tools Ecosystem](shared/ai-tools-ecosystem/overview)
+**Explore**: Navigate to Shared Content → Security & Compliance from the menu above.
+
+### AI Tools Ecosystem
 Learn about the broader ecosystem of AI development tools and how they integrate.
+
+**Explore**: Navigate to Shared Content → AI Tools Ecosystem from the menu above.
 
 ## 🚀 Getting Started
 
