@@ -1,0 +1,451 @@
+
+The motive of this repo is to have cook book for github copilot, 
+-GitHub Copilot Best Practices ( Search github for resources)
+    - custom instructions
+    - github actions
+    - github agents 
+    - github speec kit
+    - github codeespaces
+    - github gloud agents
+    - github issues 
+    - copilot cli
+    - gemini cli
+    - modeel selection
+    - context providing to copilot
+
+
+- prompting bst practices
+- native AI SDLC - plaining, requireemnt gathring, coding, reviewing, audting, testing, UAT, UX, desinging, reporting etc.
+- thinkk of what more can be done
+
+The AI-Native SDLC: Organizational Cookbook
+Version: 1.0
+Target Audience: Architects, Engineering Leads, Developers, QA, DevOps
+Objective: To standardize the adoption of AI tools across the software delivery lifecycle, shifting from "AI-Assisted" to "AI-Native" workflows.
+Part 1: Cookbook Master Outline
+This section outlines the comprehensive structure for the organizational playbook.
+1. Introduction: The AI-Native Mindset
+* 1.1 From Coding to Curating: Shifting the developer role from syntax generation to logic verification.
+* 1.2 The "Human-in-the-Loop" Protocol: Defining critical checkpoints where human oversight is non-negotiable.
+* 1.3 Governance & Ethics: Data privacy, IP protection, and acceptable use policies.
+2. Tooling Ecosystem & Configuration
+* 2.1 GitHub Copilot Enterprise: Setup, seat management, and policy enforcement.
+* 2.2 Model Selection Guidance:
+    * Claude 3.5 Sonnet: Best for complex refactoring and reasoning.
+    * GPT-4o: Best for general knowledge and speed.
+    * Gemini: Best for large context windows and Google ecosystem integration.
+* 2.3 Context Management: Using .github/copilot-instructions.md and workspace context.
+3. GitHub Copilot Best Practices (Detailed in Part 2)
+* See Part 2 for full breakdown.
+4. Prompt Engineering for Developers (Detailed in Part 3)
+* See Part 3 for full breakdown.
+5. AI Across the SDLC Phases
+* 5.1 Requirements & Analysis
+    * Workflow: Converting User Stories to Gherkin syntax using AI.
+    * Technique: generating Domain Models and Entity Relationship Diagrams (Mermaid.js) via prompting.
+* 5.2 Architecture & Design
+    * Workflow: RFC generation and critique.
+    * Anti-Pattern: Relying on AI for high-availability system design without architect validation.
+* 5.3 Development (The "Build" Phase)
+    * Workflow: Test-Driven Development (TDD) with AI (Generate Tests $\rightarrow$ Generate Code).
+    * Technique: Utilizing "Ghost Text" vs. Chat Pane effectively.
+* 5.4 Testing & Quality Assurance
+    * Workflow: Auto-generating unit tests, edge cases, and mock data.
+    * Technique: Using AI to explain legacy code bugs.
+* 5.5 Deployment & DevOps
+    * Workflow: Generating Terraform/Ansible scripts from architecture descriptions.
+    * Observability: generating RegEx for log parsing and New Relic/Datadog queries.
+* 5.6 Documentation
+    * Workflow: Auto-docstring generation and API documentation (Swagger/OpenAPI).
+6. Measuring Success
+* 6.1 Metrics that Matter: Cycle time reduction, Code Acceptance Rate (CAR).
+* 6.2 Metrics to Avoid: Lines of Code (LOC) generated.
+Part 2: Chapter - GitHub Copilot Best Practices
+1. Introduction
+GitHub Copilot is not an autopilot; it is a pair programmer. Effective usage requires active direction (Context) and verification (Critique). This chapter defines the "Golden Path" for usage within our organization.
+A. Usage Guidelines
+1. Code Completion (Ghost Text)
+* Mechanism: Suggestions that appear inline as you type (gray text).
+* Best Use Case: Boilerplate, repetitive patterns, closing tags, and standard library implementations.
+* Strategy: Start typing a descriptive function name or comment. Copilot predicts intent based on the file content and open tabs.
+* Tip: If the suggestion is partially correct, accept it (Tab) and edit immediately.
+2. Code Generation from Comments
+* Mechanism: Writing a comment block describing logic, then letting Copilot implement it.
+* Best Use Case: Algorithmic logic, data transformations, and utility functions.
+* Strategy: Write "Pseudocode Comments." Break complex logic into step-by-step comment lines to guide the generation.
+3. Writing Unit Tests (/tests)
+* Mechanism: Using Copilot Chat or highlight actions to generate tests.
+* Best Use Case: Generating coverage for happy paths and standard edge cases.
+* Strategy: Highlight the function $\rightarrow$ Right Click $\rightarrow$ Copilot $\rightarrow$ "Generate Tests".
+* Critical Requirement: You must manually verify that the assertions are valid. AI often mocks data incorrectly.
+4. Refactoring and Optimization (/fix)
+* Mechanism: Highlighting code and asking Copilot to refactor.
+* Best Use Case: Reducing cyclomatic complexity, modernizing legacy syntax (e.g., Java 7 to 17), or improving variable naming.
+* Command: @workspace /fix Explain why this code is slow and suggest an O(n) alternative.
+B. Patterns & Anti-Patterns
+Best Practice Patterns
+Pattern	Description
+The "Open Tab" Context	Copilot reads your open tabs to understand context. Always keep relevant interface/type definitions open when working on implementation files.
+The Iterative Refine	Don't accept the first massive block of code. Accept, review, then ask Copilot to optimize specific lines.
+The "Persona" Prompt	Tell Copilot who it is. "Act as a Senior Security Engineer. Review this code for SQL injection vulnerabilities."
+Custom Instructions	Maintain a .github/copilot-instructions.md file in the root to enforce project-specific coding styles (e.g., "Always use functional components").
+Anti-Patterns (What to Avoid)
+Anti-Pattern	Description	Risk Level
+The Blind Commit	Tab $\rightarrow$ Save $\rightarrow$ Commit without reading.	🔴 High (Security/Bugs)
+The Secret Leaker	Asking Copilot to "hardcode a connection string for testing."	🔴 High (Security)
+Context Overload	Asking Copilot to architect a whole system in one prompt.	🟡 Medium (Hallucination)
+The Silent Failure	Assuming Copilot's imports are correct. It often hallucinates libraries that don't exist.	🟡 Medium (Build Failure)
+C. Code Examples
+Scenario 1: The "Good" Flow (Boilerplate with Validation)
+Objective: Create a Python FastAPI endpoint to upload a user avatar.
+Step 1: The Prompt (Comment Driven)
+# Create a FastAPI endpoint 'upload_avatar' that accepts a file.
+# 1. Validate the file is a PNG or JPEG.
+# 2. Ensure file size is under 2MB.
+# 3. Save to AWS S3 using boto3.
+# 4. Return the public URL.
+Step 2: Copilot Output (Typical)
+@app.post("/upload_avatar")
+async def upload_avatar(file: UploadFile = File(...)):
+    if file.content_type not in ["image/png", "image/jpeg"]:
+        raise HTTPException(status_code=400, detail="Invalid file type")
+    
+    # Copilot often assumes a standard 'MAX_SIZE' constant exists
+    if len(await file.read()) > 2 * 1024 * 1024: 
+        raise HTTPException(status_code=400, detail="File too large")
+        
+    # S3 logic here...
+Step 3: Best Practice Review (Human Oversight)
+* Critique: await file.read() reads the whole file into memory to check size. This is a DoS vector.
+* Action: The developer modifies the code to check Content-Length header first or stream the file chunks.
+Scenario 2: The "Risky" Flow (Security Critical)
+Objective: Generate a JWT Validation function.
+Bad Prompt: "Write a function to verify a JWT token."
+Risky Output:
+// WARNING: This ignores the algorithm verification!
+function verifyToken(token) {
+    return jwt.verify(token, process.env.SECRET);
+}
+Risk: If the attacker changes the header alg to "None", some libraries might accept this if not explicitly restricted.
+Correct Prompt (Security-Aware):
+"Write a Node.js function to verify a JWT. Enforce the algorithm is strictly RS256. Validate the Issuer and Audience claims. Handle expiration errors explicitly."
+Part 3: Chapter - Writing Better Prompts for AI Development Tools
+
+
+1. Core Principles of Prompt Engineering
+Prompt engineering for developers is the art of translating technical requirements into strict constraints that an LLM can parse.
+	The "R.I.C.E." Framework
+When constructing complex prompts, use this checklist:
+1. R - Role: Who is the AI? (e.g., "Act as a Senior Database Administrator")
+2. I - Input/Instruction: What specific task must be done? (e.g., "Optimize this SQL query")
+3. C - Context: What are the constraints? (e.g., "Use PostgreSQL 14 syntax, avoid CTEs for performance reasons")
+4. E - Example/Output: What should the result look like? (e.g., "Output only the SQL code, no markdown explanations")
+	Key Principles
+* Chain of Thought: For complex tasks, ask the AI to "Think step-by-step." This forces the model to generate intermediate logic, reducing logical errors.
+* Negative Constraints: Explicitly state what not to do (e.g., "Do not use deprecated library X").
+* Reference Context: Use @workspace (in VS Code) to force the AI to look at project architecture before generating code.
+2. Prompt Templates
+	A. Code Generation Template
+"Act as a [Language] expert. Create a [Component/Class] that performs [Function].
+Constraints:
+* Use [Library/Framework Version].
+* Adhere to [Pattern, e.g., Singleton, Factory].
+* Handle errors using [Method, e.g., Try/Catch, Result Types].
+Input Data: [Paste Interface or JSON Schema here]"
+	B. Refactoring Template
+"Review the following code for [Target: Performance/Readability/Security]. Refactor it to apply [Principle: SOLID/DRY].
+Specific Instructions:
+* Break large functions into smaller helper functions.
+* Add Type hinting.
+* Do not change the external behavior of the API.
+Code: [Paste Code]"
+	C. Unit Test Generation Template
+"Generate Unit Tests for the selected code using [Framework: Jest/PyTest].
+Requirements:
+1. Cover the Happy Path.
+2. Generate 3 specific Edge Cases (e.g., null inputs, empty arrays).
+3. Mock the database calls to [Dependency Name].
+4. Do not use 'any' types."
+	D. Documentation Template
+"Generate Javadoc/Docstrings for this file.
+* Include @param and @return descriptions.
+* Note any exceptions thrown.
+* Add a brief 'Example Usage' block for the main public methods."
+3. Examples: Before vs. After
+	Example 1: Debugging
+❌ Vague Prompt:
+"Why is this code failing?"
+✅ High-Quality Prompt:
+"I am getting a NullPointerException at line 42 in the following Java snippet. The userData object seems to be null only when the API times out.
+Analyze the error handling flow. Suggest a fix that uses Optional to handle the null safety gracefully.
+Code: [...]"
+Why it works: It provides the error type, the location, the specific runtime condition (timeout), and a constraint for the solution (Optional).
+	Example 2: SQL Optimization
+❌ Vague Prompt:
+"Make this query faster."
+✅ High-Quality Prompt:
+"Act as a PostgreSQL expert. Analyze the execution plan for the following query. It is performing a full table scan on Orders.
+Suggest indexes that should be added. Rewrite the query to use INNER JOIN instead of sub-selects if it improves performance.
+Query: [...]"
+Why it works: It identifies the bottleneck (full table scan), assigns a role, and suggests specific technical strategies (indexes, join types).
+
+
+SECTION 1: Master Cookbook Structure (Outline)
+This outline represents the structural skeleton of the organization's AI adoption strategy. It moves beyond simple "coding assistance" to a holistic AI-integrated lifecycle.
+		Part I: Foundations & Mindset
+1. Introduction: The AI-Native Shift
+* From "Writing Code" to "Reviewing & Curating Logic."
+* The Economic Case: Velocity vs. Quality vs. Cognitive Load.
+* The "Human-in-the-Loop" Mandatory Governance Model.
+2. Tooling Ecosystem & Architecture
+* GitHub Copilot: The primary IDE companion.
+* GitHub Spec Kit: Templating prompts and context for consistency.
+* Model Selection Strategy:
+    * Flash/Turbo Models: High velocity, low cost (Autocomplete, simple refactors).
+    * High-Reasoning Models (e.g., GPT-4o, Claude 3.5 Sonnet): Complex architecture, debugging, security auditing.
+    * Deep Reasoning (e.g., o1-preview): Algorithm design, systematic architectural reviews.
+3. The Core Skill: Prompt Engineering for Engineering
+* The Anatomy of a Technical Prompt.
+* Context Management: The art of feeding the window.
+* Iterative Refinement loops.
+		Part II: AI Across the SDLC
+4. Requirements & Domain Modeling
+* Input: Raw business stakeholder notes.
+* AI Task: Generating User Stories, Gherkin Syntax (Cucumber), and Domain Entity relationships.
+* Technique: "Socratic Questioning" prompts to identify missing edge cases in requirements.
+5. Architecture & Design
+* Spec-Driven Development: Using github/spec-kit to enforce architectural patterns before coding.
+* Figma-to-Code: Best practices for visual-to-logical translation using AI.
+* Anti-Pattern: Letting the AI define the system boundaries without architectural oversight.
+6. Development (The "Copilot" Phase)
+* Boilerplate reduction strategies.
+* Complex logic implementation.
+* Refactoring legacy codebases (Java to Kotlin, Monolith to Microservices).
+7. Testing & Quality Assurance
+* Unit Test Generation: Moving beyond "Happy Path" coverage.
+* Integration Testing: Mocking complex dependencies with AI.
+* TDD with AI: Writing the test prompt first.
+8. Deployment & DevOps
+* Infrastructure as Code (IaC): Generating Terraform/Bicep from architecture descriptions.
+* CI/CD Pipeline Generation: Creating GitHub Actions/Jenkins files via natural language.
+* Warning: Security scanning generated scripts (preventing secrets injection).
+9. Documentation & Knowledge Management
+* Self-Documenting Code: Using AI to generate Javadoc/TSDoc.
+* "Explain This": Onboarding new developers to legacy codebases.
+* Commit Message standardization.
+		Part III: Governance & Adoption
+				10. Security & Compliance * Data Privacy: What code stays local vs. what goes to the LLM. * Vulnerability Injection: How to audit AI-generated code. * 					IP Concerns & License attribution.
+11. Team Adoption Strategy * The "Champion" Model: Identifying internal AI advocates. * Metrics: Measuring impact (Cycle time vs. Lines of Code).
+SECTION 2: GitHub Copilot Best Practices
+	A. Usage Guidelines
+GitHub Copilot is not an "autopilot"; it is a sophisticated pair programmer that mirrors the intent and context you provide.
+1. Code Completion (Ghost Text)
+* Best Use: Repetitive boilerplate, pattern matching (e.g., switch statements, mapping arrays), and API calls where parameters are strictly typed.
+* Technique: Type significantly faster than you think to trigger suggestions, but pause after defining function signatures to let Copilot implement the body.
+2. Code Generation from Comments
+* Best Use: Writing complex algorithms or regex based on natural language descriptions.
+* Technique: "Comment-Driven Development." Write the logic in comments step-by-step first. This forces you to think through the architecture, and it gives Copilot the perfect context map.
+3. Writing Unit Tests
+* Best Use: Generating test scaffolds and asserting basic logic.
+* Technique: Open the file you want to test in a split pane. Open your existing test suite in another. Copilot reads the open tabs to match the style of your existing tests while targeting the logic of the source file.
+4. Documentation Generation
+* Best Use: Adding JSDoc/Docstrings to legacy code.
+* Technique: Highlight a function block, right-click (or use Chat), and type /doc. Always review the output; AI tends to describe what the code does, not why.
+	B. Best-Practice Patterns & Anti-Patterns
+Category	Pattern (Do This)	Anti-Pattern (Avoid This)
+Context	The Open-Tab Strategy: Keep relevant files (Interfaces, DTOs, Utils) open in IDE tabs. Copilot prioritizes "neighboring tabs" for context.	The Empty Desk: Expecting Copilot to know your project structure with only one file open.
+Comments	Chain-of-Thought: Break complex logic into 3-4 comment lines before the function definition.	The Magic Wand: Writing // Process data and accepting the first giant block of code generated.
+Refactoring	Targeted Refactor: Highlight specific code and use Inline Chat (Cmd+I) with "Simplify this loop using map/reduce."	Blind Rewrite: Selecting a whole file and asking "Make this better."
+Validation	Skeptical Review: Assume the code contains one bug. Look for off-by-one errors and hallucinated library methods.	Tab-Enter: Hitting Tab immediately without reading the logic flow.
+
+	C. Code Examples
+Scenario 1: Good Prompting & Boilerplate (The "Happy Path")
+Objective: Create a React hook to fetch user data with a loading state.
+The Prompt (Comment):
+			// Custom hook: useUserData
+			// Input: userId (string)
+// Logic:
+// 1. maintain state for data, loading, error
+// 2. fetch from /api/users/{userId}
+// 3. typed response using User interface (assumed imported)
+// 4. handle 404 and 500 errors explicitly
+export const useUserData = (userId: string) => {
+Copilot Output (High Quality):
+  const [data, setData] = useState<User | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`/api/users/${userId}`);
+        
+        if (!response.ok) {
+          if (response.status === 404) throw new Error('User not found');
+          throw new Error('Server error');
+        }
+
+        const result: User = await response.json();
+        setData(result);
+      } catch (err: any) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (userId) fetchData();
+  }, [userId]);
+
+  return { data, loading, error };
+};
+Why this works: The prompt defined the state requirements and error handling specifics, preventing Copilot from generating a lazy fetch call without error management.
+Scenario 2: Risky Code (Security & Hallucination)
+Objective: Validate a JWT token in Node.js.
+The Weak Prompt:
+// verify token function
+function verify(token) {
+Potential Risky Copilot Output:
+function verify(token) {
+  // RISKY: No secret checking, potentially allows 'none' algorithm
+  return jwt.decode(token); 
+}
+The Corrective "Human-in-the-Loop" Workflow:
+1. Identify Risk: This involves Auth/Security.
+2. Refine Prompt: Use Inline Chat or specific comments.
+    * Prompt: "Verify JWT using jsonwebtoken library. Must use process.env.JWT_SECRET. Explicitly disable the 'none' algorithm."
+3. Review: Ensure the algorithms parameter is hardcoded.
+SECTION 3: Writing Better Prompts for AI Development Tools
+Prompt engineering in software development is the skill of translating intent into technical constraints.
+A. Core Principles
+1. Clear Intent (The "What"): Be specific about the functional goal.
+    * Bad: "Fix this."
+    * Good: "Fix the race condition in this async function."
+2. Context & Constraints (The "How"): Define the boundaries.
+    * Tech Stack: "Use React Query v5."
+    * Style: "Functional programming style, no class-based components."
+    * Performance: "Optimize for O(n) complexity."
+3. Output Format (The "Shape"): Define how you want the answer.
+    * "Return only the code block."
+    * "Provide the code followed by a bulleted explanation of changes."
+4. Iterative Refinement: If the first result is wrong, do not manually rewrite the code immediately. Refine the prompt to correct the AI's assumption. This "trains" the session context.
+B. Prompt Templates
+Copy these templates into your Spec Kit or personal snippet library.
+Template: Code Generation (New Feature)
+"Act as a Senior [Language] Developer. Create a [Component/Function] that [Action].
+Inputs: [List arguments] Outputs: [Return type] Constraints:
+* Use [Library/Framework] for logic.
+* Handle [Specific Edge Case].
+* Ensure strict typing."
+Template: Refactoring / Optimization
+"Analyze the selected code for [Performance/Readability/Security]. Suggest a refactor that:
+1. Reduces cognitive complexity.
+2. Implements [Specific Pattern, e.g., Strategy Pattern].
+3. Preserves all existing unit test behaviors."
+Template: Unit Test Generation
+"Write unit tests for the following code using [Testing Framework]. Include test cases for:
+1. Happy path (valid inputs).
+2. Boundary conditions (null, empty, negative values).
+3. Mock external service [Service Name]."
+Template: Debugging
+"I am getting the error: [Error Message]. Analyzing the stack trace below and the provided code, identify the root cause. Explain the fix step-by-step before generating the corrected code block."
+C. Examples: Before vs. After
+Example 1: SQL Query Generation
+* Vague Prompt:"Write a query to get users and their orders."
+* Result (Poor): A simple JOIN that might return thousands of rows, lock tables, or miss deleted flags.
+* Improved Prompt:"Write a PostgreSQL query to retrieve users and their most recent 5 orders. Constraints:
+    * Use a LEFT JOIN.
+    * Filter out users where is_deleted is true.
+    * Optimize for performance on a table with 1M+ rows (indexes exist on user_id).
+    * Return JSON format for the orders column."
+* 
+* Why it works: It handles soft deletes, performance scaling, and specific data formatting (JSON aggregation) relevant to modern APIs.
+Example 2: CSS Styling
+* Vague Prompt:"Make this button look good."
+* Result (Poor): Arbitrary colors, likely generic standard blue, fixed pixel sizes.
+* Improved Prompt:"Style this <button> using Tailwind CSS. Style Guide:
+    * Primary brand color (indigo-600).
+    * Rounded corners (md).
+    * Accessible focus states (ring-2).
+    * Dark mode support (slate-800 on dark).
+    * Responsive padding (larger on mobile)."
+* 
+* Why it works: It connects the request to the design system (Tailwind) and enforces accessibility and responsiveness, saving multiple iteration cycles.
+
+
+
+
+
+
+————
+
+
+ection 5: Phase 1 - Requirements & Specification
+Context: The AI-Native SDLC (Spec-First Approach) Reference Project: CIVI (Citizen/Customer Interface & Verification)
+1. The Strategy: "Context is King"
+In a traditional SDLC, requirements are often scattered across Jira tickets, Confluence pages, and Slack threads. This fragments context. In an AI-Native SDLC, the "Spec" must be a living file within the repository (closer to the code). This allows Copilot to "read" the requirements without leaving the IDE.
+The Golden Rule: Never ask Copilot to "write code for the ticket." Ask Copilot to "implement the logic defined in specs/feature-001.md."
+2. The GitHub Spec Kit Structure
+To replicate the success of the CIVI pilot across the organization, adopt the following folder structure. This structures the "knowledge base" for the AI.
+Plaintext
+
+CIVI-Project-Root/
+├── .github/
+│   ├── specs/                 # The Source of Truth for Copilot
+│   │   ├── 001-user-auth.md   # Feature Specification
+│   │   ├── 002-tax-calc.md
+│   │   └── templates/         # Spec Templates (User Story, API Design)
+│   └── workflows/
+├── src/
+└── docs/
+3. The Workflow: From Idea to Spec
+Step A: The Raw Input (The "Issue")
+A Product Owner creates a GitHub Issue: "As a user, I need to upload my tax documents so they can be verified."
+Step B: The AI Refinement (The "Spec")
+Instead of coding immediately, the Architect/Lead uses Copilot to generate a structured Spec file in the .github/specs/ folder.
+Prompt to Copilot:
+"Create a new spec file .github/specs/003-doc-upload.md based on Issue #12. Use the standard CIVI project template. Define the API endpoints, database schema changes for PostgreSQL, and validation rules for PDF/JPG files."
+Step C: The Spec File (The Output)
+Example of a high-quality Spec file that acts as a prompt for development:
+Markdown
+
+# Feature: Document Upload Service (CIVI Module)
+
+## 1. Overview
+Allows users to upload KYC documents. Files are stored in S3; metadata is stored in PostgreSQL.
+
+## 2. Data Model
+**Table:** `document_metadata`
+- `id`: UUID (PK)
+- `user_id`: UUID (FK)
+- `s3_key`: String
+- `status`: ENUM ('PENDING', 'VERIFIED', 'REJECTED')
+- `uploaded_at`: Timestamp
+
+## 3. API Contract (OpenAPI Draft)
+POST /api/v1/documents/upload
+- Content-Type: multipart/form-data
+- Constraints: Max size 5MB, Types: [.pdf, .jpg]
+
+## 4. Business Logic
+- IF file_size > 5MB THEN return 400 Bad Request
+- IF user_status is 'LOCKED' THEN deny upload
+- ON success: Publish event `DocumentUploaded` to Kafka topic `civi-events`
+4. The Development: Coding from the Spec
+This is where the "Spec Kit" shines. You no longer prompt with vague intent; you prompt with the Spec file as the anchor.
+Developer Workflow:
+1. Open src/main/java/com/civi/service/DocumentService.java.
+2. Open .github/specs/003-doc-upload.md in a split tab (to load it into Copilot's context).
+3. Prompt:"Implement the uploadDocument method in this service class. Strictly follow the Business Logic and Data Model defined in the open spec file 003-doc-upload.md. Include the Kafka event publication."
+Why this works better:
+* Reduced Hallucination: Copilot isn't guessing the max file size (5MB); it's reading it.
+* Naming Consistency: It uses document_metadata and s3_key exactly as defined in the spec.
+* Architectural Compliance: It includes the Kafka event because the spec explicitly demanded it.
+5. Automation: Spec-to-Test Generation
+Before writing the implementation code, use the spec to generate the test harness.
+Prompt:
+"Reference 003-doc-upload.md. Generate a JUnit 5 test class DocumentServiceTest. Create test cases for:
+1. Successful upload (Happy Path).
+2. File size > 5MB (Expect 400).
+3. User status 'LOCKED' (Expect 403). Do not mock the Kafka publisher yet; just use comments for where it goes."

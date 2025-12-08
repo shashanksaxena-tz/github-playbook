@@ -1,0 +1,30 @@
+# github-playbook Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2025-12-06
+
+## Active Technologies
+
+- Markdown (content) + Node.js 18+ with Docusaurus 3.x + Docusaurus 3.x, React, MDX, Prism.js (syntax highlighting), markdownlint, markdown-link-check (001-copilot-playbook)
+
+## Project Structure
+
+```text
+backend/
+frontend/
+tests/
+```
+
+## Commands
+
+# Add commands for Markdown (content) + Node.js 18+ with Docusaurus 3.x
+
+## Code Style
+
+Markdown (content) + Node.js 18+ with Docusaurus 3.x: Follow standard conventions
+
+## Recent Changes
+
+- 001-copilot-playbook: Added Markdown (content) + Node.js 18+ with Docusaurus 3.x + Docusaurus 3.x, React, MDX, Prism.js (syntax highlighting), markdownlint, markdown-link-check
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
