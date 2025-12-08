@@ -1,0 +1,293 @@
+# Frontmatter Schema for Advanced Practice Documents
+
+This YAML schema defines the required and optional fields for frontmatter metadata in all advanced practice documents.
+
+## Schema Definition
+
+```yaml
+# REQUIRED FIELDS
+id:
+  type: string
+  required: true
+  format: "{role}-{level}-practices"
+  pattern: "^(developer|architect|qa|devops)-(senior|lead|principal)-practices$"
+  description: "Unique identifier for the document"
+  examples:
+    - "developer-senior-practices"
+    - "architect-lead-practices"
+    - "qa-principal-practices"
+
+title:
+  type: string
+  required: true
+  min_length: 10
+  max_length: 100
+  description: "Human-readable title for the document"
+  examples:
+    - "Advanced Development Patterns for Senior Engineers"
+    - "Team-Scale AI Adoption for Lead Architects"
+    - "Organization-Wide QA Strategy for Principal Engineers"
+
+role:
+  type: enum
+  required: true
+  values:
+    - developer
+    - architect
+    - qa
+    - devops
+  description: "The role this document is written for"
+
+experience_level:
+  type: enum
+  required: true
+  values:
+    - senior
+    - lead
+    - principal
+  description: "The experience level this document targets"
+
+workflow_stage:
+  type: string
+  required: true
+  value: "advanced"
+  description: "Always 'advanced' for these documents"
+
+description:
+  type: string
+  required: true
+  min_length: 50
+  max_length: 150
+  description: "Brief description of document content and target audience"
+  examples:
+    - "Advanced AI-assisted development patterns, mentorship strategies, and code review practices for senior developers with 5-8 years experience"
+    - "Team-scale AI adoption frameworks, decision-making processes, and cross-functional collaboration patterns for lead architects"
+
+cross_references:
+  type: array
+  required: true
+  items:
+    type: string
+    format: "document-id"
+  min_items: 2
+  description: "List of related document IDs for navigation"
+  examples:
+    - ["developer-guide-introduction", "developer-lead-practices", "python-example"]
+    - ["architect-senior-practices", "architect-guide-introduction", "model-selection"]
+
+tags:
+  type: array
+  required: true
+  items:
+    type: string
+  min_items: 3
+  max_items: 7
+  description: "Keywords for categorization and discovery"
+  examples:
+    - ["advanced-patterns", "code-review", "mentorship", "senior-developer", "ai-assisted-development"]
+    - ["team-adoption", "governance", "lead-architect", "decision-frameworks"]
+
+last_updated:
+  type: date
+  required: true
+  format: "YYYY-MM-DD"
+  pattern: "^\\d{4}-\\d{2}-\\d{2}$"
+  description: "ISO date of last content update"
+  examples:
+    - "2025-12-08"
+    - "2026-03-15"
+```
+
+## Validation Rules
+
+### ID Validation
+- Must follow format: `{role}-{level}-practices`
+- Role must be one of: developer, architect, qa, devops
+- Level must be one of: senior, lead, principal
+- Must be unique across all documents in the repository
+
+### Title Validation
+- Length: 10-100 characters
+- Should clearly indicate role and experience level
+- Use title case or sentence case consistently
+
+### Description Validation
+- Length: 50-150 characters
+- Should mention:
+  1. Content type (patterns, frameworks, case studies)
+  2. Target audience (role + experience level)
+  3. Years of experience range
+
+### Cross References Validation
+- Minimum 2 references required
+- All referenced IDs must exist in the repository
+- Should include:
+  - At least 1 reference to lower experience level (if applicable)
+  - At least 1 reference to related content in same role guide
+  - Optional: cross-role references for multi-disciplinary topics
+
+### Tags Validation
+- 3-7 tags required (not too few, not too many)
+- Use lowercase with hyphens (kebab-case)
+- Include at least:
+  - Experience level tag (e.g., "senior-developer", "lead-architect")
+  - Content type tag (e.g., "advanced-patterns", "team-adoption", "governance")
+  - Tool/technology tag (e.g., "ai-assisted-development", "github-copilot")
+
+### Date Validation
+- Must be valid ISO 8601 date (YYYY-MM-DD)
+- Should be updated when content changes significantly
+- Must not be in the future
+
+## Example Frontmatter Blocks
+
+### Developer Senior Practices
+```yaml
+---
+id: developer-senior-practices
+title: "Advanced Development Patterns for Senior Engineers"
+role: developer
+experience_level: senior
+workflow_stage: advanced
+description: "Advanced AI-assisted development patterns, mentorship strategies, and code review practices for senior developers with 5-8 years experience"
+cross_references:
+  - developer-guide-introduction
+  - developer-lead-practices
+  - python-example
+  - code-generation-comments
+tags:
+  - advanced-patterns
+  - code-review
+  - mentorship
+  - senior-developer
+  - ai-assisted-development
+last_updated: 2025-12-08
+---
+```
+
+### Architect Lead Practices
+```yaml
+---
+id: architect-lead-practices
+title: "Team-Scale AI Adoption for Lead Architects"
+role: architect
+experience_level: lead
+workflow_stage: advanced
+description: "Team-scale AI adoption frameworks, decision-making processes, and cross-functional collaboration patterns for lead architects with 8-12 years experience"
+cross_references:
+  - architect-senior-practices
+  - architect-principal-practices
+  - architect-guide-introduction
+  - model-selection
+  - developer-lead-practices
+tags:
+  - team-adoption
+  - governance
+  - lead-architect
+  - decision-frameworks
+  - cross-functional-collaboration
+last_updated: 2025-12-08
+---
+```
+
+### QA Principal Practices
+```yaml
+---
+id: qa-principal-practices
+title: "Organization-Wide QA Strategy for Principal Engineers"
+role: qa
+experience_level: principal
+workflow_stage: advanced
+description: "Organization-wide quality assurance strategy, multi-team governance, and innovation assessment frameworks for principal QA engineers with 12+ years experience"
+cross_references:
+  - qa-lead-practices
+  - qa-guide-introduction
+  - architect-principal-practices
+  - devops-principal-practices
+tags:
+  - organizational-strategy
+  - qa-governance
+  - principal-engineer
+  - multi-team-quality
+  - innovation-assessment
+last_updated: 2025-12-08
+---
+```
+
+### DevOps Senior Practices
+```yaml
+---
+id: devops-senior-practices
+title: "Advanced Infrastructure Patterns for Senior DevOps Engineers"
+role: devops
+experience_level: senior
+workflow_stage: advanced
+description: "Advanced AI-assisted infrastructure patterns, deployment automation, and operational excellence for senior DevOps engineers with 5-8 years experience"
+cross_references:
+  - devops-guide-introduction
+  - devops-lead-practices
+  - developer-senior-practices
+tags:
+  - infrastructure-patterns
+  - deployment-automation
+  - operational-excellence
+  - senior-devops
+  - ai-assisted-infrastructure
+last_updated: 2025-12-08
+---
+```
+
+## Automated Validation
+
+This schema can be validated using tools like:
+- **yamllint**: Validate YAML syntax
+- **Custom scripts**: Check field presence, format, and cross-reference validity
+- **CI/CD hooks**: Automatically validate on commit/PR
+
+### Example Validation Script (Pseudocode)
+
+```python
+def validate_frontmatter(document_path):
+    frontmatter = parse_yaml_frontmatter(document_path)
+    
+    # Required field checks
+    assert 'id' in frontmatter
+    assert 'title' in frontmatter
+    assert 'role' in frontmatter
+    assert 'experience_level' in frontmatter
+    assert 'workflow_stage' in frontmatter
+    assert 'description' in frontmatter
+    assert 'cross_references' in frontmatter
+    assert 'tags' in frontmatter
+    assert 'last_updated' in frontmatter
+    
+    # Format checks
+    assert re.match(r'^(developer|architect|qa|devops)-(senior|lead|principal)-practices$', frontmatter['id'])
+    assert frontmatter['role'] in ['developer', 'architect', 'qa', 'devops']
+    assert frontmatter['experience_level'] in ['senior', 'lead', 'principal']
+    assert frontmatter['workflow_stage'] == 'advanced'
+    assert 10 <= len(frontmatter['title']) <= 100
+    assert 50 <= len(frontmatter['description']) <= 150
+    assert 3 <= len(frontmatter['tags']) <= 7
+    assert len(frontmatter['cross_references']) >= 2
+    assert re.match(r'^\d{4}-\d{2}-\d{2}$', frontmatter['last_updated'])
+    
+    # Cross-reference validation
+    for ref_id in frontmatter['cross_references']:
+        assert document_exists(ref_id)
+    
+    return True
+```
+
+## Maintenance Notes
+
+- Review frontmatter schema quarterly for new field requirements
+- Update examples when new patterns emerge
+- Keep validation rules in sync with data model
+- Document any schema changes with rationale
+
+---
+
+**Schema Version**: 1.0.0  
+**Last Updated**: 2025-12-08  
+**Status**: Complete
