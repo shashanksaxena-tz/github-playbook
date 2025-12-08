@@ -64,6 +64,12 @@ const config = {
         },
         items: [
           {
+            type: 'doc',
+            docId: 'index',
+            position: 'left',
+            label: 'Home',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'developerSidebar',
             position: 'left',
