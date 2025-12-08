@@ -7,95 +7,60 @@ description: Organizational guide for standardizing AI tool adoption across deve
 
 # GitHub Copilot & AI-Native SDLC Playbook
 
-Welcome to the **GitHub Copilot & AI-Native SDLC Playbook** - a comprehensive organizational guide for standardizing AI tool adoption and establishing best practices for AI-assisted software development.
+Welcome to the **Organizational guide for standardizing AI tool** - your comprehensive organizational guide for standardizing AI tool adoption and maximizing productivity with GitHub Copilot and other AI development tools.
 
-## Overview
+## 🎯 What is This Playbook?
 
-This playbook provides role-based guidance for developers, architects, QA engineers, and DevOps professionals to effectively adopt and standardize AI tools like GitHub Copilot in their software development lifecycle.
+This playbook provides role-specific guidance, best practices, and standards for teams adopting AI-assisted development tools. Whether you're a developer, architect, QA engineer, or DevOps professional, you'll find tailored content to help you work effectively with AI tools.
 
-## Quick Navigation
+## 👥 Role-Based Guides
 
-### 👨‍💻 [Developer Guide](developer-guide/getting-started/introduction.md)
+### 👨‍💻 [Developer Guide](developer-guide/getting-started/introduction)
+Learn how to use GitHub Copilot effectively for daily development tasks, code completion, test generation, and refactoring.
 
-Learn how to use GitHub Copilot effectively in your daily development workflow:
+### 🏗️ [Architect Guide](architect-guide/getting-started/introduction)
+Establish standards, governance policies, and best practices for AI tool adoption across your organization.
 
-- **[Code Completion](developer-guide/daily-usage/code-completion.md)** - Master inline code suggestions
-- **[Code Generation from Comments](developer-guide/daily-usage/code-generation-comments.md)** - Comment-driven development
-- **[Test Generation](developer-guide/daily-usage/test-generation.md)** - AI-powered unit test creation
-- **[Refactoring Techniques](developer-guide/daily-usage/refactoring.md)** - Improve code quality with AI
-- **[Anti-Patterns](developer-guide/daily-usage/anti-patterns.md)** - Common mistakes to avoid
+### 🧪 [QA Guide](qa-guide/getting-started/introduction)
+Discover how to leverage AI tools for test generation, test maintenance, and quality assurance workflows.
 
-**Examples:**
-- [Python Examples](developer-guide/examples/python-example.md)
-- [JavaScript/TypeScript Examples](developer-guide/examples/javascript-example.md)
-- [Java Examples](developer-guide/examples/java-example.md)
-- [.NET Examples](developer-guide/examples/dotnet-example.md)
-- [Language-Agnostic Patterns](developer-guide/examples/language-agnostic-patterns.md)
+### 🚀 [DevOps Guide](devops-guide/getting-started/introduction)
+Learn how to use AI tools for infrastructure automation, CI/CD pipelines, and deployment workflows.
 
-### 🏗️ [Architect Guide](architect-guide/getting-started/introduction.md)
+## 📚 Shared Content
 
-Establish organizational standards and governance:
+### [Prompt Engineering](shared/prompt-engineering/introduction)
+Master the art of writing effective prompts and using frameworks like RICE for better AI interactions.
 
-- **[Model Selection Strategy](architect-guide/standards/model-selection.md)** - Choose the right AI models
-- **[Context Management](architect-guide/standards/context-management.md)** - Open-tab strategy
-- **[Copilot Instructions](architect-guide/standards/copilot-instructions.md)** - Project-specific guidelines
-- **[Governance Policies](architect-guide/governance/policies.md)** - Policy templates
-- **[Human Oversight](architect-guide/governance/human-oversight.md)** - Mandatory review checkpoints
+### [AI-Native SDLC](shared/ai-native-sdlc/workflows)
+Explore workflows and methodologies for building AI-native software development lifecycles.
 
-### 🧪 [QA Guide](qa-guide/getting-started/introduction.md)
+### [Security & Compliance](shared/security-compliance/overview)
+Understand security considerations and compliance requirements when using AI tools.
 
-Quality assurance practices for AI-assisted development.
+### [AI Tools Ecosystem](shared/ai-tools-ecosystem/overview)
+Learn about the broader ecosystem of AI development tools and how they integrate.
 
-### 🚀 [DevOps Guide](devops-guide/getting-started/introduction.md)
+## 🚀 Getting Started
 
-DevOps and deployment practices.
+1. **Choose your role** - Navigate to the guide that matches your role
+2. **Start with "Getting Started"** - Each guide begins with an introduction
+3. **Explore daily usage patterns** - Learn practical patterns for everyday work
+4. **Review best practices** - Understand anti-patterns and how to avoid them
 
-## Shared Resources
+## 💡 Key Principles
 
-### 📝 [Prompt Engineering](shared/prompt-engineering/introduction.md)
+- **Always review AI-generated code** - Never commit without understanding what you're committing
+- **Use AI as a pair programmer** - Not an autopilot
+- **Maintain code quality** - AI suggestions should meet your team's standards
+- **Security first** - Review all AI suggestions for security vulnerabilities
+- **Continuous learning** - Stay updated with best practices and new patterns
 
-Master the art of effective prompting:
+## 📖 Navigation
 
-- **[R.I.C.E. Framework](shared/prompt-engineering/rice-framework.md)** - Role, Input, Context, Examples
-- **[Prompt Templates](shared/prompt-engineering/templates/code-generation.md)** - Ready-to-use templates
-- **[Before/After Examples](shared/prompt-engineering/before-after-examples.md)** - See prompt improvements
-
-### 🔒 [Security & Compliance](shared/security-compliance/overview.md)
-
-Security best practices and compliance guidelines.
-
-### 🛠️ [AI Tools Ecosystem](shared/ai-tools-ecosystem/overview.md)
-
-Overview of AI tools and extensibility framework.
-
-### 🔄 [AI-Native SDLC](shared/ai-native-sdlc/workflows.md)
-
-Software development lifecycle practices:
-
-- **[Spec-First Development](shared/ai-native-sdlc/spec-first.md)** - Specification-driven approach
-- **[TDD with AI](shared/ai-native-sdlc/tdd-with-ai.md)** - Test-driven development workflow
-- **[AI-Native Workflows](shared/ai-native-sdlc/workflows.md)** - Complete SDLC coverage
-
-### 📊 [Governance](shared/governance/measuring-success.md)
-
-- **[Measuring Success](shared/governance/measuring-success.md)** - Metrics and KPIs
-- **[Conflict Resolution](shared/governance/conflict-resolution.md)** - Handling policy conflicts
-
-## Getting Started
-
-1. **New to AI-assisted development?** Start with the [Developer Guide](developer-guide/getting-started/introduction.md)
-2. **Setting up organizational standards?** Begin with the [Architect Guide](architect-guide/getting-started/introduction.md)
-3. **Want to improve your prompts?** Check out the [R.I.C.E. Framework](shared/prompt-engineering/rice-framework.md)
-
-## Key Principles
-
-- ✅ **Always review AI-generated code** before accepting
-- ✅ **Maintain human oversight** at critical checkpoints
-- ✅ **Use appropriate models** for different tasks
-- ✅ **Provide context** through open tabs and documentation
-- ✅ **Follow security best practices** when using AI tools
+Use the navigation menu above to explore content by role, or browse the sidebars for each guide to find specific topics.
 
 ---
 
-*This playbook is a living document. Contributions and feedback are welcome.*
+**Built with ❤️ using Docusaurus**
 
