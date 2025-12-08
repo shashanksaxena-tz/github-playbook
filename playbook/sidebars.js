@@ -13,6 +13,11 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+  // Main/Home Sidebar (shown on index page)
+  mainSidebar: [
+    'index',
+  ],
+
   // Developer Guide Sidebar
   developerSidebar: [
     {

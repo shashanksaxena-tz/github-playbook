@@ -1,12 +1,13 @@
 ---
 id: index
-title: Home
-description: GitHub Copilot & AI-Native SDLC Playbook - Organizational guide for standardizing AI tool adoption
+title: GitHub Copilot & AI-Native SDLC Playbook
+slug: /
+description: Organizational guide for standardizing AI tool adoption across development teams
 ---
 
 # GitHub Copilot & AI-Native SDLC Playbook
 
-Welcome to the **AI-Native SDLC Playbook** - your comprehensive organizational guide for standardizing AI tool adoption and maximizing productivity with GitHub Copilot and other AI development tools.
+Welcome to the **Organizational guide for standardizing AI tool** - your comprehensive organizational guide for standardizing AI tool adoption and maximizing productivity with GitHub Copilot and other AI development tools.
 
 ## 🎯 What is This Playbook?
 
