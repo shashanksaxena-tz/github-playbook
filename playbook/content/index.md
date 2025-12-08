@@ -15,77 +15,77 @@ This playbook provides role-based guidance for developers, architects, QA engine
 
 ## Quick Navigation
 
-### 👨‍💻 [Developer Guide](/developer-guide/getting-started/developer-guide-introduction)
+### 👨‍💻 [Developer Guide](developer-guide/getting-started/introduction.md)
 
 Learn how to use GitHub Copilot effectively in your daily development workflow:
 
-- **[Code Completion](/developer-guide/daily-usage/code-completion)** - Master inline code suggestions
-- **[Code Generation from Comments](/developer-guide/daily-usage/code-generation-comments)** - Comment-driven development
-- **[Test Generation](/developer-guide/daily-usage/test-generation)** - AI-powered unit test creation
-- **[Refactoring Techniques](/developer-guide/daily-usage/refactoring)** - Improve code quality with AI
-- **[Anti-Patterns](/developer-guide/daily-usage/anti-patterns)** - Common mistakes to avoid
+- **[Code Completion](developer-guide/daily-usage/code-completion.md)** - Master inline code suggestions
+- **[Code Generation from Comments](developer-guide/daily-usage/code-generation-comments.md)** - Comment-driven development
+- **[Test Generation](developer-guide/daily-usage/test-generation.md)** - AI-powered unit test creation
+- **[Refactoring Techniques](developer-guide/daily-usage/refactoring.md)** - Improve code quality with AI
+- **[Anti-Patterns](developer-guide/daily-usage/anti-patterns.md)** - Common mistakes to avoid
 
 **Examples:**
-- [Python Examples](/developer-guide/examples/python-example)
-- [JavaScript/TypeScript Examples](/developer-guide/examples/javascript-example)
-- [Java Examples](/developer-guide/examples/java-example)
-- [.NET Examples](/developer-guide/examples/dotnet-example)
-- [Language-Agnostic Patterns](/developer-guide/examples/language-agnostic-patterns)
+- [Python Examples](developer-guide/examples/python-example.md)
+- [JavaScript/TypeScript Examples](developer-guide/examples/javascript-example.md)
+- [Java Examples](developer-guide/examples/java-example.md)
+- [.NET Examples](developer-guide/examples/dotnet-example.md)
+- [Language-Agnostic Patterns](developer-guide/examples/language-agnostic-patterns.md)
 
-### 🏗️ [Architect Guide](/architect-guide/getting-started/architect-guide-introduction)
+### 🏗️ [Architect Guide](architect-guide/getting-started/introduction.md)
 
 Establish organizational standards and governance:
 
-- **[Model Selection Strategy](/architect-guide/standards/model-selection)** - Choose the right AI models
-- **[Context Management](/architect-guide/standards/context-management)** - Open-tab strategy
-- **[Copilot Instructions](/architect-guide/standards/copilot-instructions)** - Project-specific guidelines
-- **[Governance Policies](/architect-guide/governance/governance-policies)** - Policy templates
-- **[Human Oversight](/architect-guide/governance/human-oversight)** - Mandatory review checkpoints
+- **[Model Selection Strategy](architect-guide/standards/model-selection.md)** - Choose the right AI models
+- **[Context Management](architect-guide/standards/context-management.md)** - Open-tab strategy
+- **[Copilot Instructions](architect-guide/standards/copilot-instructions.md)** - Project-specific guidelines
+- **[Governance Policies](architect-guide/governance/policies.md)** - Policy templates
+- **[Human Oversight](architect-guide/governance/human-oversight.md)** - Mandatory review checkpoints
 
-### 🧪 [QA Guide](/qa-guide/getting-started/qa-guide-introduction)
+### 🧪 [QA Guide](qa-guide/getting-started/introduction.md)
 
 Quality assurance practices for AI-assisted development.
 
-### 🚀 [DevOps Guide](/devops-guide/getting-started/devops-guide-introduction)
+### 🚀 [DevOps Guide](devops-guide/getting-started/introduction.md)
 
 DevOps and deployment practices.
 
 ## Shared Resources
 
-### 📝 [Prompt Engineering](/shared/prompt-engineering/prompt-engineering-introduction)
+### 📝 [Prompt Engineering](shared/prompt-engineering/introduction.md)
 
 Master the art of effective prompting:
 
-- **[R.I.C.E. Framework](/shared/prompt-engineering/rice-framework)** - Role, Input, Context, Examples
-- **[Prompt Templates](/shared/prompt-engineering/templates/code-generation-template)** - Ready-to-use templates
-- **[Before/After Examples](/shared/prompt-engineering/before-after-examples)** - See prompt improvements
+- **[R.I.C.E. Framework](shared/prompt-engineering/rice-framework.md)** - Role, Input, Context, Examples
+- **[Prompt Templates](shared/prompt-engineering/templates/code-generation.md)** - Ready-to-use templates
+- **[Before/After Examples](shared/prompt-engineering/before-after-examples.md)** - See prompt improvements
 
-### 🔒 [Security & Compliance](/shared/security-compliance/security-compliance-overview)
+### 🔒 [Security & Compliance](shared/security-compliance/overview.md)
 
 Security best practices and compliance guidelines.
 
-### 🛠️ [AI Tools Ecosystem](/shared/ai-tools-ecosystem/ai-tools-ecosystem-overview)
+### 🛠️ [AI Tools Ecosystem](shared/ai-tools-ecosystem/overview.md)
 
 Overview of AI tools and extensibility framework.
 
-### 🔄 [AI-Native SDLC](/shared/ai-native-sdlc/ai-native-sdlc-workflows)
+### 🔄 [AI-Native SDLC](shared/ai-native-sdlc/workflows.md)
 
 Software development lifecycle practices:
 
-- **[Spec-First Development](/shared/ai-native-sdlc/spec-first)** - Specification-driven approach
-- **[TDD with AI](/shared/ai-native-sdlc/tdd-with-ai)** - Test-driven development workflow
-- **[AI-Native Workflows](/shared/ai-native-sdlc/ai-native-sdlc-workflows)** - Complete SDLC coverage
+- **[Spec-First Development](shared/ai-native-sdlc/spec-first.md)** - Specification-driven approach
+- **[TDD with AI](shared/ai-native-sdlc/tdd-with-ai.md)** - Test-driven development workflow
+- **[AI-Native Workflows](shared/ai-native-sdlc/workflows.md)** - Complete SDLC coverage
 
-### 📊 [Governance](/shared/governance/measuring-success)
+### 📊 [Governance](shared/governance/measuring-success.md)
 
-- **[Measuring Success](/shared/governance/measuring-success)** - Metrics and KPIs
-- **[Conflict Resolution](/shared/governance/conflict-resolution)** - Handling policy conflicts
+- **[Measuring Success](shared/governance/measuring-success.md)** - Metrics and KPIs
+- **[Conflict Resolution](shared/governance/conflict-resolution.md)** - Handling policy conflicts
 
 ## Getting Started
 
-1. **New to AI-assisted development?** Start with the [Developer Guide](/developer-guide/getting-started/developer-guide-introduction)
-2. **Setting up organizational standards?** Begin with the [Architect Guide](/architect-guide/getting-started/architect-guide-introduction)
-3. **Want to improve your prompts?** Check out the [R.I.C.E. Framework](/shared/prompt-engineering/rice-framework)
+1. **New to AI-assisted development?** Start with the [Developer Guide](developer-guide/getting-started/introduction.md)
+2. **Setting up organizational standards?** Begin with the [Architect Guide](architect-guide/getting-started/introduction.md)
+3. **Want to improve your prompts?** Check out the [R.I.C.E. Framework](shared/prompt-engineering/rice-framework.md)
 
 ## Key Principles
 
