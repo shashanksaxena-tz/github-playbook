@@ -29,8 +29,8 @@ As a Principal Architect, you shape the long-term technical vision for AI adopti
 
 ## Prerequisites
 
-- [Senior Practices](./senior-practices) - Single-team patterns mastery
-- [Lead Practices](./lead-practices) - Multi-team governance experience
+- [Senior Practices](./architect-senior-practices) - Single-team patterns mastery
+- [Lead Practices](./architect-lead-practices) - Multi-team governance experience
 - Deep understanding of organizational dynamics and change management
 - Track record of successful large-scale technical initiatives
 
@@ -574,8 +574,8 @@ Global financial services company, 5000+ engineers across 50 teams, highly regul
 
 ## Related Resources
 
-- [Senior Practices](./senior-practices) - Foundational patterns
-- [Lead Practices](./lead-practices) - Multi-team coordination
-- [Developer Principal Practices](../../developer-guide/advanced/principal-practices) - Engineering excellence
+- [Senior Practices](./architect-senior-practices) - Foundational patterns
+- [Lead Practices](./architect-lead-practices) - Multi-team coordination
+- [Developer Principal Practices](../../developer-guide/advanced/developer-principal-practices) - Engineering excellence
 - [Governance Policies](../governance/policies) - Detailed policies
 - [Human Oversight](../governance/human-oversight) - Risk management

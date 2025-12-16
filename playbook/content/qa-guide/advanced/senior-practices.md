@@ -37,8 +37,8 @@ last_updated: 2025-12-08
 
 **This guide is NOT for you if:**
 - You're new to AI-assisted testing → Start with [Getting Started](../getting-started/introduction.md)
-- You need team-scale testing strategies → See [Lead Practices](./lead-practices.md)
-- You need organizational quality governance frameworks → See [Principal Practices](./principal-practices.md)
+- You need team-scale testing strategies → See [Lead Practices](./qa-lead-practices)
+- You need organizational quality governance frameworks → See [Principal Practices](./qa-principal-practices)
 
 **Time Investment**: 30-45 minutes to read, ongoing reference for advanced testing patterns
 
@@ -1151,7 +1151,7 @@ As a senior QA engineer, you lead test reviews and establish testing standards.
 
 **Automation Quality**:
 - [ ] Tests run reliably without flakiness
-- [ ] Test execution time is reasonable (<5 min for unit, <30 min for integration)
+- [ ] Test execution time is reasonable (&lt;5 min for unit, &lt;30 min for integration)
 - [ ] Tests clean up after themselves (no side effects)
 - [ ] Test utilities and helpers are reusable
 - [ ] CI/CD integration is properly configured
@@ -1195,8 +1195,8 @@ Track metrics that demonstrate testing effectiveness and AI tool impact.
 **Test Effectiveness**:
 - **Defect Detection Rate**: % of bugs found before production (Target: 90%+)
 - **Test Coverage**: Code coverage by tests (Target: 80%+ for critical paths)
-- **Escaped Defects**: Bugs found in production (Target: <5 per release)
-- **Test Execution Time**: Time to run full test suite (Target: <30 min)
+- **Escaped Defects**: Bugs found in production (Target: &lt;5 per release)
+- **Test Execution Time**: Time to run full test suite (Target: &lt;30 min)
 
 **AI Tool Impact**:
 - **Test Creation Time**: Time to write new tests (Target: 50% reduction)
@@ -1206,9 +1206,9 @@ Track metrics that demonstrate testing effectiveness and AI tool impact.
 
 **Team Productivity**:
 - **Test Automation Rate**: % of test cases automated (Target: 70%+)
-- **Test Flakiness**: % of tests that fail intermittently (Target: <5%)
-- **Bug Reproduction Time**: Time to create reproduction test case (Target: <2 hours)
-- **Regression Testing Time**: Time for full regression cycle (Target: <4 hours)
+- **Test Flakiness**: % of tests that fail intermittently (Target: &lt;5%)
+- **Bug Reproduction Time**: Time to create reproduction test case (Target: &lt;2 hours)
+- **Regression Testing Time**: Time for full regression cycle (Target: &lt;4 hours)
 
 ---
 
@@ -1222,7 +1222,7 @@ Track metrics that demonstrate testing effectiveness and AI tool impact.
 
 **At the Team Level**:
 - Increase overall test coverage to 80%+ on critical paths
-- Reduce escaped defects to <5 per release
+- Reduce escaped defects to &lt;5 per release
 - Achieve 70%+ test automation rate
 - Improve test execution time by 40%
 
@@ -1243,12 +1243,12 @@ Track metrics that demonstrate testing effectiveness and AI tool impact.
 ## Related Content
 
 ### Within This Guide
-- [QA Lead Practices](./lead-practices.md) - Team-scale testing strategies
-- [QA Principal Practices](./principal-practices.md) - Organization-wide quality governance
+- [QA Lead Practices](./qa-lead-practices) - Team-scale testing strategies
+- [QA Principal Practices](./qa-principal-practices) - Organization-wide quality governance
 - [Getting Started](../getting-started/introduction.md) - Foundational testing concepts
 
 ### Cross-Role Guidance
-- [Developer Senior Practices](../../developer-guide/advanced/senior-practices.md) - Collaboration on test-driven development
+- [Developer Senior Practices](../../developer-guide/advanced/developer-senior-practices) - Collaboration on test-driven development
 - [DevOps Senior Practices](../../devops-guide/advanced/senior-practices.md) - CI/CD and test automation pipelines
 - [Architect Senior Practices](../../architect-guide/advanced/senior-practices.md) - System testing and quality attributes
 

@@ -20,4 +20,4 @@ Built design system serving 20 product teams, reducing design-to-dev time by 60%
 Implemented automated design review with AI, catching 95% of inconsistencies before development.
 
 ## Next Steps
-- Review [Principal Practices](./principal-practices)
+- Review [Principal Practices](./ui-designer-principal-practices)

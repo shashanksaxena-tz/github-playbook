@@ -154,13 +154,13 @@ Create:
 
 1. **Beginner**: Start with market research and feature prioritization
 2. **Intermediate**: Use AI for product strategy and roadmap planning
-3. **Advanced**: Explore [Senior Practices](../advanced/senior-practices) for strategic product management
-4. **Lead**: Review [Lead Practices](../advanced/lead-practices) for portfolio management
-5. **Principal**: Study [Principal Practices](../advanced/principal-practices) for innovation leadership
+3. **Advanced**: Explore [Senior Practices](../advanced/product-manager-senior-practices) for strategic product management
+4. **Lead**: Review [Lead Practices](../advanced/product-manager-lead-practices) for portfolio management
+5. **Principal**: Study [Principal Practices](../advanced/product-manager-principal-practices) for innovation leadership
 
 ## Next Steps
 
-- Explore [Senior Product Manager Practices](../advanced/senior-practices) for advanced techniques
+- Explore [Senior Product Manager Practices](../advanced/product-manager-senior-practices) for advanced techniques
 - Learn about [Product Owner Guide](../../product-owner-guide/getting-started/product-owner-guide-introduction) for backlog management
 - Review [Shared Prompt Engineering](../../shared/prompt-engineering/prompt-engineering-introduction) for better AI prompts
 
@@ -183,4 +183,4 @@ Develop clear product messaging that resonates with target audiences.
 
 ---
 
-Ready to dive deeper? Check out our [Advanced Practices](../advanced/senior-practices) for experienced product managers looking to master AI-assisted product strategy.
+Ready to dive deeper? Check out our [Advanced Practices](../advanced/product-manager-senior-practices) for experienced product managers looking to master AI-assisted product strategy.

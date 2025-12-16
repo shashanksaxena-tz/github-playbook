@@ -23,4 +23,4 @@ Leverage AI to analyze customer feedback, market trends, and business metrics fo
 Use AI to estimate story points, identify dependencies, and optimize sprint capacity planning.
 
 ## Next Steps
-- Progress to [Lead Practices](./lead-practices) for multi-team coordination
+- Progress to [Lead Practices](./product-owner-lead-practices) for multi-team coordination

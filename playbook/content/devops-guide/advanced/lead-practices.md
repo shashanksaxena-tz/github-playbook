@@ -24,5 +24,5 @@ Orchestrated migration to multi-cloud architecture with AI-powered cost optimiza
 Built SRE team and practices, improving system reliability from 99.5% to 99.95% uptime with AI-assisted incident management.
 
 ## Next Steps
-- Review [Principal Practices](./principal-practices) for org-wide strategy
-- Explore [Senior Practices](./senior-practices) for technical depth
+- Review [Principal Practices](./devops-principal-practices) for org-wide strategy
+- Explore [Senior Practices](./devops-senior-practices) for technical depth

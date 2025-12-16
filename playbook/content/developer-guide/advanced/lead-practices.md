@@ -36,8 +36,8 @@ last_updated: 2025-12-08
 - Make decisions that affect team velocity, code quality, and developer experience
 
 **This guide is NOT for you if:**
-- You're an individual contributor focused on technical depth → See [Senior Practices](./senior-practices.md)
-- You need organization-wide governance strategies → See [Principal Practices](./principal-practices.md)
+- You're an individual contributor focused on technical depth → See [Senior Practices](./developer-senior-practices)
+- You need organization-wide governance strategies → See [Principal Practices](./developer-principal-practices)
 - You're new to managing or leading teams → Start with team leadership fundamentals first
 
 **Time Investment**: 45-60 minutes to read, ongoing reference for team adoption strategies
@@ -355,7 +355,7 @@ Team had low test coverage (45%) and slow test writing velocity, impacting abili
 **Action**:
 
 1. **Assessment Phase** (Week 1-2):
-   - Analyzed test gaps: identified 25 modules with <20% coverage
+   - Analyzed test gaps: identified 25 modules with &lt;20% coverage
    - Surveyed team: "Writing tests is tedious," "Don't know what to test"
    - Identified quick wins: API endpoints, utility functions (deterministic, easy to test)
 
@@ -560,7 +560,7 @@ As a lead developer, you make decisions that affect your entire team. Use struct
    - 4.0+: Strong yes, proceed with rollout
    - 3.0-3.9: Conditional yes, pilot with subset of team
    - 2.0-2.9: Weak no, revisit in 6 months
-   - <2.0: Strong no, not a good fit
+   - &lt;2.0: Strong no, not a good fit
 
 **Example Application**: Evaluating GitHub Copilot Enterprise for team
 
@@ -689,7 +689,7 @@ ROI = ($3,600 - $1,500) / $1,500 * 100% = 140% (first month)
 **Risk Score** = Likelihood * Impact
 - **15+**: High risk, requires multiple mitigations
 - **8-14**: Medium risk, requires at least one mitigation
-- **<8**: Low risk, standard review sufficient
+- **&lt;8**: Low risk, standard review sufficient
 
 **Mitigation Strategies by Risk Level**:
 
@@ -706,7 +706,7 @@ ROI = ($3,600 - $1,500) / $1,500 * 100% = 140% (first month)
 - Recommended: AI-assisted test case generation
 - Recommended: Code quality tools (linters, complexity analysis)
 
-**Low Risk (<8)**:
+**Low Risk (&lt;8)**:
 - Required: Automated tests
 - Recommended: Self-review with AI assistance
 - Optional: Peer review
@@ -922,14 +922,14 @@ Track team-level metrics to demonstrate the value of AI tool adoption and identi
 ### Quality Metrics
 
 **Code Quality**:
-- Defect escape rate (bugs found in production) - target: <5%
-- Code review cycle time - target: <24 hours
-- PR iteration rounds - target: <2 rounds average
+- Defect escape rate (bugs found in production) - target: &lt;5%
+- Code review cycle time - target: &lt;24 hours
+- PR iteration rounds - target: &lt;2 rounds average
 - Test coverage - target: 90%+
 
 **Security**:
-- Security vulnerabilities in AI-generated code - target: <1 per month
-- Time to fix security issues - target: <4 hours
+- Security vulnerabilities in AI-generated code - target: &lt;1 per month
+- Time to fix security issues - target: &lt;4 hours
 - Security review pass rate - target: 90%+
 
 **How to Measure**:
@@ -945,15 +945,15 @@ Track team-level metrics to demonstrate the value of AI tool adoption and identi
 
 **Development Speed**:
 - Story points completed per sprint - track trend
-- Time to first PR for new features - target: <2 days
-- Lead time (issue → production) - target: <7 days
+- Time to first PR for new features - target: &lt;2 days
+- Lead time (issue → production) - target: &lt;7 days
 - Deployment frequency - target: daily or more
 
 **Developer Experience**:
 - Developer satisfaction with AI tools - target: 8/10+
 - "AI tools make me more productive" agreement - target: 80%+
-- On-call stress rating - target: <5/10
-- Team attrition rate - target: <10% annual
+- On-call stress rating - target: &lt;5/10
+- Team attrition rate - target: &lt;10% annual
 
 **How to Measure**:
 - Track story points in Jira/Linear
@@ -997,14 +997,14 @@ Track team-level metrics to demonstrate the value of AI tool adoption and identi
 - Training completion: 100% (target: 95%+) ✅
 
 ### Quality Metrics ✅
-- Defect escape rate: 3.2% (target: <5%) ✅
-- PR cycle time: 18 hours avg (target: <24hr) ✅
-- PR iterations: 1.6 avg (target: <2) ✅
+- Defect escape rate: 3.2% (target: &lt;5%) ✅
+- PR cycle time: 18 hours avg (target: &lt;24hr) ✅
+- PR iterations: 1.6 avg (target: &lt;2) ✅
 - Test coverage: 82% (target: 90%) ⚠️ BELOW TARGET
 
 ### Velocity Metrics ✅
 - Story points/sprint: 38 (up from 28, +36%) ✅
-- Lead time: 5.2 days (target: <7 days) ✅
+- Lead time: 5.2 days (target: &lt;7 days) ✅
 - Deployment frequency: 2.1/day (target: daily+) ✅
 - Developer satisfaction: 8.3/10 (target: 8+) ✅
 
@@ -1028,8 +1028,8 @@ Track team-level metrics to demonstrate the value of AI tool adoption and identi
 ## Related Content
 
 ### In This Guide
-- [Senior Developer Practices](./senior-practices.md) - Advanced technical patterns for individual contributors
-- [Principal Developer Practices](./principal-practices.md) - Organization-wide AI governance for principal engineers
+- [Senior Developer Practices](./developer-senior-practices) - Advanced technical patterns for individual contributors
+- [Principal Developer Practices](./developer-principal-practices) - Organization-wide AI governance for principal engineers
 - [Getting Started](../getting-started/introduction.md) - Foundation concepts for AI-assisted development
 
 ### Cross-Role Guidance

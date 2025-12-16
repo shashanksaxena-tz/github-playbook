@@ -115,13 +115,13 @@ Identify:
 
 1. **Beginner**: Start with simple user story generation and backlog organization
 2. **Intermediate**: Use AI for sprint planning and stakeholder communication
-3. **Advanced**: Explore [Senior Practices](../advanced/senior-practices) for strategic product management
-4. **Lead**: Review [Lead Practices](../advanced/lead-practices) for multi-team coordination
-5. **Principal**: Study [Principal Practices](../advanced/principal-practices) for product vision and strategy
+3. **Advanced**: Explore [Senior Practices](../advanced/product-owner-senior-practices) for strategic product management
+4. **Lead**: Review [Lead Practices](../advanced/product-owner-lead-practices) for multi-team coordination
+5. **Principal**: Study [Principal Practices](../advanced/product-owner-principal-practices) for product vision and strategy
 
 ## Next Steps
 
-- Explore [Senior Product Owner Practices](../advanced/senior-practices) for advanced techniques
+- Explore [Senior Product Owner Practices](../advanced/product-owner-senior-practices) for advanced techniques
 - Learn about [Product Manager Guide](../../product-manager-guide/getting-started/product-manager-guide-introduction) for strategic product management
 - Review [Shared Prompt Engineering](../../shared/prompt-engineering/prompt-engineering-introduction) for better AI prompts
 
@@ -141,4 +141,4 @@ Analyze customer feedback and user interviews to extract themes and insights.
 
 ---
 
-Ready to dive deeper? Check out our [Advanced Practices](../advanced/senior-practices) for experienced product owners looking to master AI-assisted product management.
+Ready to dive deeper? Check out our [Advanced Practices](../advanced/product-owner-senior-practices) for experienced product owners looking to master AI-assisted product management.

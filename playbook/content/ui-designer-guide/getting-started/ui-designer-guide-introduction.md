@@ -158,13 +158,13 @@ Needed copy for:
 
 1. **Beginner**: Start with visual exploration and asset generation
 2. **Intermediate**: Use AI for design systems and documentation
-3. **Advanced**: Explore [Senior Practices](../advanced/senior-practices) for advanced design techniques
-4. **Lead**: Review [Lead Practices](../advanced/lead-practices) for design system governance
-5. **Principal**: Study [Principal Practices](../advanced/principal-practices) for design vision
+3. **Advanced**: Explore [Senior Practices](../advanced/ui-designer-senior-practices) for advanced design techniques
+4. **Lead**: Review [Lead Practices](../advanced/ui-designer-lead-practices) for design system governance
+5. **Principal**: Study [Principal Practices](../advanced/ui-designer-principal-practices) for design vision
 
 ## Next Steps
 
-- Explore [Senior UI Designer Practices](../advanced/senior-practices) for advanced techniques
+- Explore [Senior UI Designer Practices](../advanced/ui-designer-senior-practices) for advanced techniques
 - Learn about [UX Designer Guide](../../ux-designer-guide/getting-started/ux-designer-guide-introduction) for user research and experience design
 - Review [Shared Prompt Engineering](../../shared/prompt-engineering/prompt-engineering-introduction) for better AI prompts
 
@@ -187,4 +187,4 @@ Create high-fidelity prototypes faster with AI-assisted design tools.
 
 ---
 
-Ready to dive deeper? Check out our [Advanced Practices](../advanced/senior-practices) for experienced UI designers looking to master AI-assisted design workflows.
+Ready to dive deeper? Check out our [Advanced Practices](../advanced/ui-designer-senior-practices) for experienced UI designers looking to master AI-assisted design workflows.

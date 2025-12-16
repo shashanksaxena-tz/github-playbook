@@ -24,5 +24,5 @@ Implemented automated review of AI-generated tests, improving assertion accuracy
 Built centralized test data platform, increasing integration test success rate from 65% to 95% and reducing test data generation time from 10min to 30sec.
 
 ## Next Steps
-- Review [Principal Practices](./principal-practices) for org-wide strategy
-- Explore [Senior Practices](./senior-practices) for technical depth
+- Review [Principal Practices](./qa-principal-practices) for org-wide strategy
+- Explore [Senior Practices](./qa-senior-practices) for technical depth

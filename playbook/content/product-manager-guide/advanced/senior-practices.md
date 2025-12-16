@@ -23,4 +23,4 @@ Leverage AI for RICE scoring, impact analysis, and data-driven feature decisions
 Use AI to generate GTM plans, messaging frameworks, and launch strategies.
 
 ## Next Steps
-- Progress to [Lead Practices](./lead-practices)
+- Progress to [Lead Practices](./product-manager-lead-practices)

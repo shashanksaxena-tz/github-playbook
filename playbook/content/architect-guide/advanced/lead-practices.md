@@ -30,7 +30,7 @@ As a Lead Architect, you coordinate AI adoption across multiple teams, establish
 ## Prerequisites
 
 Before implementing these multi-team strategies, you should be familiar with:
-- [Senior Architect Practices](./senior-practices) - Single-team patterns
+- [Senior Architect Practices](./architect-senior-practices) - Single-team patterns
 - [Model Selection Strategy](../standards/model-selection) - Technical foundations
 - [Governance Policies](../governance/policies) - Policy frameworks
 - [Context Management](../standards/context-management) - Organizational context
@@ -759,7 +759,7 @@ Return complete implementation with tests.
   - Weekly office hours for questions
 - Success criteria:
   - 85%+ code following standards
-  - <10% standards violations in PRs
+  - &lt;10% standards violations in PRs
 
 ## Phase 3: Organization-wide (6 weeks)
 - Teams: Remaining 3 product teams
@@ -769,7 +769,7 @@ Return complete implementation with tests.
   - Self-service training materials
 - Success criteria:
   - 80%+ code following standards
-  - <5% standards violations in PRs
+  - &lt;5% standards violations in PRs
   - All teams have context files
 ```
 
@@ -954,10 +954,10 @@ import { Octokit } from '@octokit/rest';
 async function enforceModelPolicy(context: any) {
   const usage = await getCopilotUsage(context.actor);
   const budget = getEngineerBudget(context.actor);
-  const utilizat = (usage.costThisMonth / budget) * 100;
+  const utilization = (usage.costThisMonth / budget) * 100;
   
   // Check budget utilization
-  if (utilationion > 100 && context.model === 'o1-preview') {
+  if (utilization > 100 && context.model === 'o1-preview') {
     // Block expensive model
     await postComment(
       context.pr,
@@ -1102,10 +1102,10 @@ Start from the bottom and build up:
 4. **Create Pilot Program**: Start with one team, prove value, then scale
 
 ### Continued Learning
-- Review [Principal Practices](./principal-practices) for organization-wide strategy
-- Study [Security & Compliance](../../shared/security-compliance/overview) for regulatory requirements
-- Explore [Senior Practices](./senior-practices) for foundational patterns
-- Reference [Developer Lead Practices](../../developer-guide/advanced/lead-practices) for technical depth
+- Review [Principal Practices](./architect-principal-practices) for organization-wide strategy
+- Study [Security & Compliance](../../shared/security-compliance/security-compliance-overview) for regulatory requirements
+- Explore [Senior Practices](./architect-senior-practices) for foundational patterns
+- Reference [Developer Lead Practices](../../developer-guide/advanced/developer-lead-practices) for technical depth
 
 ### Community Engagement
 - Share your governance frameworks
@@ -1117,8 +1117,8 @@ Start from the bottom and build up:
 
 ## Related Resources
 
-- [Senior Architect Practices](./senior-practices) - Single-team foundations
-- [Principal Practices](./principal-practices) - Organization-wide strategy
-- [Developer Lead Practices](../../developer-guide/advanced/lead-practices) - Engineering perspective
+- [Senior Architect Practices](./architect-senior-practices) - Single-team foundations
+- [Principal Practices](./architect-principal-practices) - Organization-wide strategy
+- [Developer Lead Practices](../../developer-guide/advanced/developer-lead-practices) - Engineering perspective
 - [Model Selection](../standards/model-selection) - Technical details
 - [Governance Policies](../governance/policies) - Policy templates

@@ -30,5 +30,5 @@ Use AI to analyze cloud spending patterns and generate recommendations for right
 Implement AI-assisted security scanning, vulnerability assessment, and automated compliance checking in deployment pipelines.
 
 ## Next Steps
-- Progress to [Lead Practices](./lead-practices) for multi-team coordination
-- Review [Principal Practices](./principal-practices) for org strategy
+- Progress to [Lead Practices](./devops-lead-practices) for multi-team coordination
+- Review [Principal Practices](./devops-principal-practices) for org strategy

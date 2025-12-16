@@ -184,13 +184,13 @@ Create:
 
 1. **Beginner**: Start with research analysis and persona creation
 2. **Intermediate**: Use AI for journey mapping and testing analysis
-3. **Advanced**: Explore [Senior Practices](../advanced/senior-practices) for advanced UX research
-4. **Lead**: Review [Lead Practices](../advanced/lead-practices) for research operations
-5. **Principal**: Study [Principal Practices](../advanced/principal-practices) for UX strategy
+3. **Advanced**: Explore [Senior Practices](../advanced/ux-designer-senior-practices) for advanced UX research
+4. **Lead**: Review [Lead Practices](../advanced/ux-designer-lead-practices) for research operations
+5. **Principal**: Study [Principal Practices](../advanced/ux-designer-principal-practices) for UX strategy
 
 ## Next Steps
 
-- Explore [Senior UX Designer Practices](../advanced/senior-practices) for advanced techniques
+- Explore [Senior UX Designer Practices](../advanced/ux-designer-senior-practices) for advanced techniques
 - Learn about [UI Designer Guide](../../ui-designer-guide/getting-started/ui-designer-guide-introduction) for visual design
 - Review [Shared Prompt Engineering](../../shared/prompt-engineering/prompt-engineering-introduction) for better AI prompts
 
@@ -216,4 +216,4 @@ Create comprehensive research reports and presentations.
 
 ---
 
-Ready to dive deeper? Check out our [Advanced Practices](../advanced/senior-practices) for experienced UX designers looking to master AI-assisted research and design.
+Ready to dive deeper? Check out our [Advanced Practices](../advanced/ux-designer-senior-practices) for experienced UX designers looking to master AI-assisted research and design.

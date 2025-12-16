@@ -20,4 +20,4 @@ Coordinated 5 product teams using AI-assisted roadmap planning, reducing feature
 Built AI-powered stakeholder updates and reporting, improving executive visibility and alignment.
 
 ## Next Steps
-- Review [Principal Practices](./principal-practices) for org-wide vision
+- Review [Principal Practices](./product-owner-principal-practices) for org-wide vision

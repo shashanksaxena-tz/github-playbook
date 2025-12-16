@@ -20,4 +20,4 @@ Built research ops function serving 30 designers, reducing research cycle time f
 Created searchable research repository with AI-assisted insights, improving research utilization by 400%.
 
 ## Next Steps
-- Review [Principal Practices](./principal-practices)
+- Review [Principal Practices](./ux-designer-principal-practices)

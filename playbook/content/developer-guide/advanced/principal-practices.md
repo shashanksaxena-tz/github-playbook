@@ -37,8 +37,8 @@ last_updated: 2025-12-08
 - Lead technical initiatives that span departments or business units
 
 **This guide is NOT for you if:**
-- You lead a single team → See [Lead Practices](./lead-practices.md)
-- You're focused on technical depth for specific projects → See [Senior Practices](./senior-practices.md)
+- You lead a single team → See [Lead Practices](./developer-lead-practices)
+- You're focused on technical depth for specific projects → See [Senior Practices](./developer-senior-practices)
 - You're not involved in strategic technical decision-making
 
 **Time Investment**: 60-90 minutes to read, ongoing reference for strategic initiatives
@@ -55,7 +55,7 @@ As a principal developer, you shape how the entire engineering organization adop
 
 **Establish Clear Goals**:
 - **Productivity**: Target 25-35% productivity improvement across engineering organization
-- **Quality**: Maintain or improve quality metrics (defect rates <0.5 per 1000 lines, security posture)
+- **Quality**: Maintain or improve quality metrics (defect rates &lt;0.5 per 1000 lines, security posture)
 - **Innovation**: Enable teams to experiment with emerging AI capabilities safely
 - **Sustainability**: Ensure AI adoption doesn't increase burnout or technical debt
 - **Skill Development**: Upskill engineers to work effectively with AI assistants
@@ -71,7 +71,7 @@ As a principal developer, you shape how the entire engineering organization adop
 ```
 "By Q4 2026, 90% of engineering teams will use AI-assisted development tools 
 as part of their standard workflow, resulting in 30% faster feature delivery 
-while maintaining our current defect rate of <0.5 bugs per 1000 lines and 
+while maintaining our current defect rate of &lt;0.5 bugs per 1000 lines and 
 achieving 85%+ test coverage across all services."
 ```
 
@@ -322,7 +322,7 @@ Innovation: AI-Powered Code Review Assistant
 Technical Assessment:
 - Capability: Identifies security vulnerabilities, suggests improvements (8/10)
 - Integration: Integrates with GitHub, requires minimal setup (9/10)
-- Performance: Analyzes PR in <30 seconds (9/10)
+- Performance: Analyzes PR in &lt;30 seconds (9/10)
 - Scalability: Supports enterprise-scale repos (8/10)
 - Maintainability: Strong vendor support, frequent updates (9/10)
 
@@ -493,7 +493,7 @@ Track metrics that demonstrate AI adoption ROI across the organization.
 - **Code Churn**: Lines added/modified/deleted (analyze patterns)
 
 **Quality Metrics**:
-- **Defect Rate**: Bugs per 1000 lines of code (Target: maintain <0.5)
+- **Defect Rate**: Bugs per 1000 lines of code (Target: maintain &lt;0.5)
 - **Security Vulnerabilities**: CVEs introduced (Target: no increase)
 - **Test Coverage**: % of code covered by tests (Target: maintain 80%+)
 - **Code Review Feedback**: Comments per PR, approval time (track trends)
@@ -507,7 +507,7 @@ Track metrics that demonstrate AI adoption ROI across the organization.
 **Satisfaction Metrics**:
 - **Developer Net Promoter Score (NPS)**: Would recommend AI tools (Target: 50+)
 - **Satisfaction Score**: 1-10 rating on AI tool experience (Target: 8+)
-- **Frustration Rate**: % of developers reporting AI tool issues (Target: <15%)
+- **Frustration Rate**: % of developers reporting AI tool issues (Target: &lt;15%)
 - **Retention**: Engineer retention rate (monitor for correlation with AI adoption)
 
 ### Metrics Dashboard
@@ -574,8 +574,8 @@ Status: ✅ ON TRACK - All key metrics trending positively
 ## Related Content
 
 ### Within This Guide
-- [Senior Developer Practices](./senior-practices.md) - Technical depth and mentorship
-- [Lead Developer Practices](./lead-practices.md) - Team-scale adoption strategies
+- [Senior Developer Practices](./developer-senior-practices) - Technical depth and mentorship
+- [Lead Developer Practices](./developer-lead-practices) - Team-scale adoption strategies
 - [Getting Started](../getting-started/introduction.md) - Foundational AI-assisted development
 
 ### Cross-Role Guidance

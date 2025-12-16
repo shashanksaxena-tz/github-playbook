@@ -23,4 +23,4 @@ Leverage Miro AI to create and iterate on user journey maps based on research da
 Use AI to transcribe, analyze, and synthesize usability testing sessions.
 
 ## Next Steps
-- Progress to [Lead Practices](./lead-practices)
+- Progress to [Lead Practices](./ux-designer-lead-practices)

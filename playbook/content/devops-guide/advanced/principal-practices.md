@@ -27,5 +27,5 @@ Establish organization-wide SRE practices with AI-powered observability, chaos e
 Led 5-year transformation to modern cloud platform, reducing infrastructure costs by 55%, improving deployment frequency by 500%, and achieving 99.99% availability.
 
 ## Next Steps
-- Review [Lead Practices](./lead-practices) for team coordination
-- Explore [Senior Practices](./senior-practices) for foundations
+- Review [Lead Practices](./devops-lead-practices) for team coordination
+- Explore [Senior Practices](./devops-senior-practices) for foundations

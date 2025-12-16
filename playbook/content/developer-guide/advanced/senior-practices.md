@@ -37,8 +37,8 @@ last_updated: 2025-12-08
 
 **This guide is NOT for you if:**
 - You're new to GitHub Copilot or AI-assisted development → Start with [Getting Started](../getting-started/introduction.md)
-- You need team-scale adoption strategies → See [Lead Practices](./lead-practices.md)
-- You need organizational governance frameworks → See [Principal Practices](./principal-practices.md)
+- You need team-scale adoption strategies → See [Lead Practices](./developer-lead-practices)
+- You need organizational governance frameworks → See [Principal Practices](./developer-principal-practices)
 
 **Time Investment**: 30-45 minutes to read, ongoing reference for advanced patterns
 
@@ -158,7 +158,7 @@ class UserService:
 - ❌ **Missing validation**: Always add input validation even if AI doesn't suggest it
 
 **Measuring Success**:
-- Cyclomatic complexity reduced from 25+ to <10 per method
+- Cyclomatic complexity reduced from 25+ to &lt;10 per method
 - Test execution time improved by 40% with mockable dependencies
 - Code review comments reduced by 60% due to clearer structure
 
@@ -308,7 +308,7 @@ Context:
 - Current implementation: processes_records(records: List[dict]) -> List[ProcessedRecord]
 - Profiling shows: 80% time in database queries (N+1 pattern), 15% in JSON serialization
 - Constraints: Must maintain exact output format, cannot change database schema
-- Optimization targets: <5 seconds for 100K records, <500MB memory usage
+- Optimization targets: &lt;5 seconds for 100K records, &lt;500MB memory usage
 - Tech stack: Python 3.11, PostgreSQL, SQLAlchemy
 
 Example: Use batch queries, generator patterns for memory efficiency, caching for repeated lookups
@@ -437,7 +437,7 @@ Input: Implement error handling for a critical API endpoint with multiple extern
 Context:
 - Endpoint: fetch_user_dashboard(user_id) depends on 3 services: UserService, AnalyticsService, RecommendationService
 - Requirements: Partial degradation acceptable (show dashboard even if recommendations fail)
-- SLA: 99.9% uptime, <500ms p95 latency
+- SLA: 99.9% uptime, &lt;500ms p95 latency
 - Error handling: Circuit breaker for each service, structured logging, retry with exponential backoff
 - Tech stack: Python, FastAPI, asyncio, Prometheus metrics
 
@@ -933,8 +933,8 @@ Track your effectiveness as a senior developer with concrete metrics that demons
 ### Individual Impact Metrics
 
 **Code Quality**:
-- Code review feedback loop: Time from PR open to merge (target: <24 hours)
-- Defect escape rate: Bugs found in production vs. development (target: <5%)
+- Code review feedback loop: Time from PR open to merge (target: &lt;24 hours)
+- Defect escape rate: Bugs found in production vs. development (target: &lt;5%)
 - Test coverage: Percentage of code covered by tests (target: 90%+)
 - Technical debt ratio: Time spent on new features vs. fixing old code (target: 80/20)
 
@@ -947,7 +947,7 @@ Track your effectiveness as a senior developer with concrete metrics that demons
 **Performance & Efficiency**:
 - AI tool adoption: Percentage of code written with AI assistance (track trend)
 - Development velocity: Story points completed per sprint (compare pre/post AI adoption)
-- Bug fix time: Mean time to resolution for critical bugs (target: <4 hours)
+- Bug fix time: Mean time to resolution for critical bugs (target: &lt;4 hours)
 - Refactoring impact: Code complexity reduction (cyclomatic complexity trend)
 
 ### Quarterly Self-Assessment Questions
@@ -990,8 +990,8 @@ Document your impact for performance reviews:
 - [Code Examples](../examples/README.md) - Practical examples for common scenarios
 
 ### Other Experience Levels
-- [Lead Developer Practices](./lead-practices.md) - Team-scale AI adoption strategies for tech leads
-- [Principal Developer Practices](./principal-practices.md) - Organizational AI governance for principal engineers
+- [Lead Developer Practices](./developer-lead-practices) - Team-scale AI adoption strategies for tech leads
+- [Principal Developer Practices](./developer-principal-practices) - Organizational AI governance for principal engineers
 
 ### Cross-Role Guidance
 - [Architect Senior Practices](../../architect-guide/advanced/senior-practices.md) - System design with AI assistance

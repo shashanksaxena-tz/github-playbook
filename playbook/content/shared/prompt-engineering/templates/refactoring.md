@@ -83,7 +83,7 @@ Refactor this data processing function to improve performance.
 
 Input/Instruction:
 - Target: processLargeDataset() function
-- Goal: Reduce execution time from 30s to <5s for 100k records
+- Goal: Reduce execution time from 30s to &lt;5s for 100k records
 - Constraints: Same output format, no data loss
 
 Context:

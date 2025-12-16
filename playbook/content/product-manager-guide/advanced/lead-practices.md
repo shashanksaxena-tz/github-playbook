@@ -20,4 +20,4 @@ Rationalized product portfolio using AI-driven usage analytics, increasing profi
 Implemented PLG motion with AI-assisted onboarding, achieving 3x user acquisition.
 
 ## Next Steps
-- Review [Principal Practices](./principal-practices)
+- Review [Principal Practices](./product-manager-principal-practices)

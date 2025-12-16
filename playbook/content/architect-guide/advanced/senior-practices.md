@@ -650,8 +650,8 @@ A data-driven approach to measuring AI adoption success, identifying high perfor
 3. Identify which pattern addresses your biggest current pain point
 
 ### Continued Learning
-- Progress to [Lead Practices](./lead-practices) for cross-team coordination
-- Review [Principal Practices](./principal-practices) for org-wide strategy
+- Progress to [Lead Practices](./architect-lead-practices) for cross-team coordination
+- Review [Principal Practices](./architect-principal-practices) for org-wide strategy
 - Explore [Human Oversight](../governance/human-oversight) for risk management
 - Study [Model Selection](../standards/model-selection) for deeper understanding
 
@@ -664,7 +664,7 @@ A data-driven approach to measuring AI adoption success, identifying high perfor
 
 ## Related Resources
 
-- [Developer Senior Practices](../../developer-guide/advanced/senior-practices) - Advanced coding patterns
+- [Developer Senior Practices](../../developer-guide/advanced/developer-senior-practices) - Advanced coding patterns
 - [QA Senior Practices](../../qa-guide/advanced/senior-practices) - Testing strategies
 - [DevOps Senior Practices](../../devops-guide/advanced/senior-practices) - Infrastructure patterns
 - [Governance Policies](../governance/policies) - Organizational policies

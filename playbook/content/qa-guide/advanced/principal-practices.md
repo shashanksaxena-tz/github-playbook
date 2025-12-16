@@ -27,5 +27,5 @@ Transform quality from gatekeeper role to embedded practice with automated gates
 Led 3-year quality transformation reducing production incidents by 60%, improving release frequency by 300%, and achieving 85% test automation.
 
 ## Next Steps
-- Review [Lead Practices](./lead-practices) for team coordination
-- Explore [Senior Practices](./senior-practices) for foundations
+- Review [Lead Practices](./qa-lead-practices) for team coordination
+- Explore [Senior Practices](./qa-senior-practices) for foundations

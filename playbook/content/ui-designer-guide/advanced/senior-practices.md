@@ -23,4 +23,4 @@ Leverage Figma AI plugins to maintain consistency and generate component variati
 Use AI tools to check color contrast, WCAG compliance, and inclusive design patterns.
 
 ## Next Steps
-- Progress to [Lead Practices](./lead-practices)
+- Progress to [Lead Practices](./ui-designer-lead-practices)
