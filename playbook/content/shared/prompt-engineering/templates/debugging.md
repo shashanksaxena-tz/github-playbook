@@ -100,7 +100,7 @@ Help debug slow database query in user search.
 Input/Instruction:
 - Problem: User search takes 5+ seconds for 10k users
 - Symptoms: Query is slow, database CPU high
-- Expected: Should complete in <1 second
+- Expected: Should complete in &lt;1 second
 
 Context:
 - Code: UserRepository.searchUsers() method

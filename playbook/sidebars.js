@@ -49,6 +49,15 @@ const sidebars = {
         'developer-guide/examples/language-agnostic-patterns',
       ],
     },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'developer-guide/advanced/developer-senior-practices',
+        'developer-guide/advanced/developer-lead-practices',
+        'developer-guide/advanced/developer-principal-practices',
+      ],
+    },
   ],
 
   // Architect Guide Sidebar
@@ -77,6 +86,15 @@ const sidebars = {
         'architect-guide/governance/human-oversight',
       ],
     },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'architect-guide/advanced/architect-senior-practices',
+        'architect-guide/advanced/architect-lead-practices',
+        'architect-guide/advanced/architect-principal-practices',
+      ],
+    },
   ],
 
   // QA Guide Sidebar
@@ -88,6 +106,15 @@ const sidebars = {
         'qa-guide/getting-started/qa-guide-introduction',
       ],
     },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'qa-guide/advanced/qa-senior-practices',
+        'qa-guide/advanced/qa-lead-practices',
+        'qa-guide/advanced/qa-principal-practices',
+      ],
+    },
   ],
 
   // DevOps Guide Sidebar
@@ -97,6 +124,95 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'devops-guide/getting-started/devops-guide-introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'devops-guide/advanced/devops-senior-practices',
+        'devops-guide/advanced/devops-lead-practices',
+        'devops-guide/advanced/devops-principal-practices',
+      ],
+    },
+  ],
+
+  // Product Owner Guide Sidebar
+  productOwnerSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      items: [
+        'product-owner-guide/getting-started/product-owner-guide-introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'product-owner-guide/advanced/product-owner-senior-practices',
+        'product-owner-guide/advanced/product-owner-lead-practices',
+        'product-owner-guide/advanced/product-owner-principal-practices',
+      ],
+    },
+  ],
+
+  // Product Manager Guide Sidebar
+  productManagerSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      items: [
+        'product-manager-guide/getting-started/product-manager-guide-introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'product-manager-guide/advanced/product-manager-senior-practices',
+        'product-manager-guide/advanced/product-manager-lead-practices',
+        'product-manager-guide/advanced/product-manager-principal-practices',
+      ],
+    },
+  ],
+
+  // UI Designer Guide Sidebar
+  uiDesignerSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      items: [
+        'ui-designer-guide/getting-started/ui-designer-guide-introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'ui-designer-guide/advanced/ui-designer-senior-practices',
+        'ui-designer-guide/advanced/ui-designer-lead-practices',
+        'ui-designer-guide/advanced/ui-designer-principal-practices',
+      ],
+    },
+  ],
+
+  // UX Designer Guide Sidebar
+  uxDesignerSidebar: [
+    {
+      type: 'category',
+      label: 'Getting Started',
+      items: [
+        'ux-designer-guide/getting-started/ux-designer-guide-introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Advanced Practices',
+      items: [
+        'ux-designer-guide/advanced/ux-designer-senior-practices',
+        'ux-designer-guide/advanced/ux-designer-lead-practices',
+        'ux-designer-guide/advanced/ux-designer-principal-practices',
       ],
     },
   ],

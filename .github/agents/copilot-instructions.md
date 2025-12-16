@@ -43,6 +43,8 @@ This project uses GitHub SpecKit for spec-driven development. Use the following 
 ```
 
 ## Active Technologies
+- Markdown (CommonMark spec), YAML 1.2 (frontmatter) + None (pure markdown documentation) (001-advanced-role-guides)
+- File system (git repository) (001-advanced-role-guides)
 
 [To be populated based on project needs]
 
@@ -55,6 +57,7 @@ This project uses GitHub SpecKit for spec-driven development. Use the following 
 [To be populated based on technology stack]
 
 ## Recent Changes
+- 001-advanced-role-guides: Added Markdown (CommonMark spec), YAML 1.2 (frontmatter) + None (pure markdown documentation)
 
 - Initial setup: Added GitHub SpecKit for spec-driven development
 
