@@ -95,6 +95,30 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'productOwnerSidebar',
+            position: 'left',
+            label: 'Product Owner Guide',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'productManagerSidebar',
+            position: 'left',
+            label: 'Product Manager Guide',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'uiDesignerSidebar',
+            position: 'left',
+            label: 'UI Designer Guide',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'uxDesignerSidebar',
+            position: 'left',
+            label: 'UX Designer Guide',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'sharedSidebar',
             position: 'left',
             label: 'Shared Content',
