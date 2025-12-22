@@ -584,9 +584,9 @@ Status: ✅ ON TRACK - All key metrics trending positively
 - [QA Principal Practices](../../qa-guide/advanced/principal-practices.md) - Quality assurance strategy
 
 ### Shared Resources
-- [Code Generation Best Practices](../../shared/code-generation.md) - Core patterns and techniques
-- [Security Guidelines](../../shared/security.md) - Security review checklists
-- [Prompt Engineering Guide](../../shared/prompt-engineering.md) - Advanced prompting techniques
+- [Code Generation Best Practices](../../shared/prompt-engineering/templates/code-generation.md) - Core patterns and techniques
+- [Security Guidelines](../../shared/security-compliance/overview.md) - Security review checklists
+- [Prompt Engineering Framework](../../shared/prompt-engineering/introduction.md) - Advanced prompting strategies
 
 ---
 

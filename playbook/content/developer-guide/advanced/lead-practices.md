@@ -1038,12 +1038,12 @@ Track team-level metrics to demonstrate the value of AI tool adoption and identi
 - [DevOps Lead Practices](../../devops-guide/advanced/lead-practices.md) - Infrastructure automation and deployment strategies
 
 ### Shared Resources
-- [AI Governance Framework](../../shared/ai-governance.md) - Organization-wide AI tool policies
-- [Security Best Practices](../../shared/security.md) - Secure coding standards for AI-generated code
-- [Team Leadership Guide](../../shared/team-leadership.md) - General team leadership principles
+- [AI Governance Framework](../../architect-guide/governance/policies.md) - Organization-wide AI tool policies
+- [Security Best Practices](../../shared/security-compliance/overview.md) - Secure coding standards for AI-generated code
+- [Team Leadership Guide](../../shared/governance/conflict-resolution.md) - General team leadership principles
 
 ### Tools & Templates
 - [AI Adoption Assessment Template](./templates/adoption-assessment.md) - Survey team AI readiness
 - [Code Review Checklist Generator](./templates/review-checklist.md) - AI-assisted review checklists
 - [Team AI Standards Template](./templates/team-standards.md) - Create team-specific AI guidelines
-- [ROI Calculator Spreadsheet](./templates/roi-calculator.xlsx) - Calculate training ROI
+- [ROI Calculator Framework](./templates/roi-calculator.md) - Calculate training ROI

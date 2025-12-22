@@ -274,7 +274,7 @@ E: Test structure matching existing tests
 
 ## Related Content
 
-- [Prompt Templates](./templates/code-generation-template) - Ready-to-use templates
+- [Prompt Templates](./templates/code-generation.md) - Ready-to-use templates
 - [Before/After Examples](./before-after-examples) - See R.I.C.E. in action
-- [Code Generation from Comments](../../developer-guide/daily-usage/code-generation-comments) - Comment-driven approach
+- [Code Generation from Comments](../../developer-guide/daily-usage/code-generation-comments.md) - Comment-driven approach
 

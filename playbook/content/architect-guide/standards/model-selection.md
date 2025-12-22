@@ -86,7 +86,7 @@ Choosing the right AI model for each task is crucial for productivity and cost-e
 - Best for step-by-step analysis
 - Most expensive
 
-**Examples**: o1-preview, Claude Opus
+**Examples**: o1, Claude Opus
 
 **When to Use**:
 - Research and design phases

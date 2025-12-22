@@ -380,7 +380,7 @@ describe('UserService.authenticate', () => {
 ## Related Content
 
 - [R.I.C.E. Framework](./rice-framework) - Learn the framework
-- [Prompt Templates](./templates/code-generation-template) - Ready-to-use templates
-- [Code Generation from Comments](../../developer-guide/daily-usage/code-generation-comments) - Alternative approach
+- [Prompt Templates](./templates/code-generation.md) - Ready-to-use templates
+- [Code Generation from Comments](../../developer-guide/daily-usage/code-generation-comments.md) - Alternative approach
 
 

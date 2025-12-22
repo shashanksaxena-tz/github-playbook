@@ -82,3 +82,8 @@ Follow these steps to create a team-specific policy:
 - Explore [Governance Policies](../governance/governance-policies) for policy templates
 - Check [Human Oversight](../governance/human-oversight) for mandatory checkpoints
 
+## Learning Path
+
+1. **Intermediate**: Master [Model Selection Strategy](../standards/model-selection) and [Context Management](../standards/context-management).
+2. **Advanced**: Implement [Governance Policies](../governance/governance-policies) and human oversight.
+3. **Expert**: Explore [Advanced Practices](../advanced/principal-practices.md) for organizational transformation.

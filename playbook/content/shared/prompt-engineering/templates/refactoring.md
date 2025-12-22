@@ -199,6 +199,6 @@ Refactor [code] to improve performance:
 ## Related Content
 
 - [R.I.C.E. Framework](../rice-framework) - Framework explanation
-- [Code Generation Template](./code-generation-template) - For new code
-- [Refactoring Techniques](../../developer-guide/daily-usage/refactoring) - Developer guide
+- [Code Generation Template](./code-generation.md) - For new code
+- [Refactoring Techniques](../../../developer-guide/daily-usage/refactoring.md) - Developer guide
 

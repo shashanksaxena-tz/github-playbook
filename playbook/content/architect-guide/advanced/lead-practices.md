@@ -32,7 +32,7 @@ As a Lead Architect, you coordinate AI adoption across multiple teams, establish
 Before implementing these multi-team strategies, you should be familiar with:
 - [Senior Architect Practices](./architect-senior-practices) - Single-team patterns
 - [Model Selection Strategy](../standards/model-selection) - Technical foundations
-- [Governance Policies](../governance/policies) - Policy frameworks
+- [Governance Policies](../governance/policies.md) - Policy frameworks
 - [Context Management](../standards/context-management) - Organizational context
 
 ## Case Study 1: Establishing Cross-Team AI Governance
@@ -122,7 +122,7 @@ council_structure:
 ### Model Usage Standards
 - Default: GPT-4o-mini for autocomplete, simple generation
 - Complex tasks: GPT-4o with explicit justification
-- Deep reasoning: o1-preview with lead architect approval
+- Deep reasoning: o1 with lead architect approval
 - Monthly budget: $500 per engineer
 
 ## Tier 2: Domain-Specific Policies (By Team Type)
@@ -232,8 +232,8 @@ organization/
 |-----------|-------------------|-----------|
 | Autocomplete | GPT-4o-mini | Speed critical |
 | Refactoring | GPT-4o | Balance speed/quality |
-| Architecture | o1-preview | Deep reasoning needed |
-| Security Review | o1-preview | Thorough analysis required |
+| Architecture | o1 | Deep reasoning needed |
+| Security Review | o1 | Thorough analysis required |
 ```
 
 ```markdown
@@ -853,12 +853,12 @@ function findOptimizationOpportunities(
   
   // Find tasks using expensive models that could use cheaper ones
   for (const model of stats) {
-    if (model.model === 'o1-preview') {
+    if (model.model === 'o1') {
       const simpleTaskUsage = model.taskBreakdown['autocomplete'] || [];
       if (simpleTaskUsage.length > 0) {
         opportunities.push({
           type: 'DOWNGRADE_MODEL',
-          currentModel: 'o1-preview',
+          currentModel: 'o1',
           recommendedModel: 'gpt-4o-mini',
           taskType: 'autocomplete',
           currentCost: sum(simpleTaskUsage.map(t => t.cost)),
@@ -874,7 +874,7 @@ function findOptimizationOpportunities(
 ```
 
 **Findings:**
-- 40% of o1-preview usage was for simple autocomplete (should use gpt-4o-mini)
+- 40% of o1 usage was for simple autocomplete (should use gpt-4o-mini)
 - 30% of gpt-4o usage was for documentation (could use gpt-4o-mini)
 - 15% of engineers accounted for 60% of costs
 - Acceptance rates varied by task, not model (hint: better prompting needed)
@@ -907,7 +907,7 @@ model_selection:
         - Complex refactoring
         
   architecture_design:
-    model: o1-preview
+    model: o1
     max_tokens: 8000
     approval_required: Lead architect
     examples:
@@ -917,7 +917,7 @@ model_selection:
       - Performance optimization strategies
       
   security_audit:
-    model: o1-preview
+    model: o1
     max_tokens: 8000
     approval_required: Security lead
     use_cases:
@@ -957,18 +957,18 @@ async function enforceModelPolicy(context: any) {
   const utilization = (usage.costThisMonth / budget) * 100;
   
   // Check budget utilization
-  if (utilization > 100 && context.model === 'o1-preview') {
+  if (utilization > 100 && context.model === 'o1') {
     // Block expensive model
     await postComment(
       context.pr,
       `⚠️ Budget Alert: You've used ${utilization.toFixed(0)}% of your monthly budget.
       
-      Access to \`o1-preview\` is temporarily restricted.
+      Access to \`o1\` is temporarily restricted.
       You can still use:
       - \`gpt-4o-mini\` for autocomplete and simple tasks
       - \`gpt-4o\` for complex tasks
       
-      Request approval from your lead architect for \`o1-preview\` access if needed.`
+      Request approval from your lead architect for \`o1\` access if needed.`
     );
     return false;
   }
@@ -981,7 +981,7 @@ async function enforceModelPolicy(context: any) {
       
       Consider:
       - Using \`gpt-4o-mini\` for simpler tasks
-      - Being selective with \`o1-preview\` usage
+      - Being selective with \`o1\` usage
       - Reviewing your model selection patterns`
     );
   }
@@ -1121,4 +1121,4 @@ Start from the bottom and build up:
 - [Principal Practices](./architect-principal-practices) - Organization-wide strategy
 - [Developer Lead Practices](../../developer-guide/advanced/developer-lead-practices) - Engineering perspective
 - [Model Selection](../standards/model-selection) - Technical details
-- [Governance Policies](../governance/policies) - Policy templates
+- [Governance Policies](../governance/policies.md) - Policy templates

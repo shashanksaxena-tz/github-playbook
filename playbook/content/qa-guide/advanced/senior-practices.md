@@ -1253,9 +1253,9 @@ Track metrics that demonstrate testing effectiveness and AI tool impact.
 - [Architect Senior Practices](../../architect-guide/advanced/senior-practices.md) - System testing and quality attributes
 
 ### Shared Resources
-- [Test Automation Best Practices](../../shared/test-automation.md) - Testing patterns and frameworks
-- [API Testing Guide](../../shared/api-testing.md) - REST API testing strategies
-- [Accessibility Testing Guide](../../shared/accessibility.md) - WCAG compliance and assistive tech testing
+- [Test Automation Best Practices](../../developer-guide/daily-usage/test-generation.md) - Testing patterns and frameworks
+- [API Testing Guide](../../developer-guide/advanced/test-generation-prompts.md) - REST API testing strategies
+- [Accessibility Testing Guide](../../ui-designer-guide/getting-started/ui-designer-guide-introduction.md) - WCAG compliance and assistive tech testing
 
 ---
 
