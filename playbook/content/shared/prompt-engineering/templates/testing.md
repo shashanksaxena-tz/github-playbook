@@ -268,5 +268,5 @@ Improve code while keeping tests green.
 
 - [R.I.C.E. Framework](../rice-framework) - Framework explanation
 - [TDD with AI](../../ai-native-sdlc/tdd-with-ai) - Complete TDD workflow
-- [Test Generation](../../developer-guide/daily-usage/test-generation) - Developer guide
+- [Test Generation](../../../developer-guide/daily-usage/test-generation.md) - Developer guide
 

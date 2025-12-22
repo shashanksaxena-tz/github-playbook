@@ -986,8 +986,8 @@ Document your impact for performance reviews:
 
 ### In This Guide
 - [Getting Started with GitHub Copilot](../getting-started/introduction.md) - Foundation concepts for AI-assisted development
-- [Daily Usage Patterns](../daily-usage/code-generation.md) - Intermediate techniques to build on
-- [Code Examples](../examples/README.md) - Practical examples for common scenarios
+- [Daily Usage Patterns](../daily-usage/code-generation-comments.md) - Intermediate techniques to build on
+- [Code Examples](../examples/python-example.md) - Practical examples for common scenarios
 
 ### Other Experience Levels
 - [Lead Developer Practices](./developer-lead-practices) - Team-scale AI adoption strategies for tech leads
@@ -999,6 +999,6 @@ Document your impact for performance reviews:
 - [DevOps Senior Practices](../../devops-guide/advanced/senior-practices.md) - Infrastructure automation patterns
 
 ### Shared Resources
-- [Security Best Practices](../../shared/security.md) - Organization-wide security standards
-- [Code Review Guidelines](../../shared/code-review.md) - Team code review processes
-- [AI Tool Governance](../../shared/ai-governance.md) - Responsible AI tool usage policies
+- [Security Best Practices](../../shared/security-compliance/overview.md) - Organization-wide security standards
+- [Code Review Guidelines](../../shared/ai-native-sdlc/workflows.md) - Team code review processes
+- [AI Tool Governance](../../architect-guide/governance/policies.md) - Responsible AI tool usage policies

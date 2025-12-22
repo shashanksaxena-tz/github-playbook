@@ -577,5 +577,5 @@ Global financial services company, 5000+ engineers across 50 teams, highly regul
 - [Senior Practices](./architect-senior-practices) - Foundational patterns
 - [Lead Practices](./architect-lead-practices) - Multi-team coordination
 - [Developer Principal Practices](../../developer-guide/advanced/developer-principal-practices) - Engineering excellence
-- [Governance Policies](../governance/policies) - Detailed policies
+- [Governance Policies](../governance/policies.md) - Detailed policies
 - [Human Oversight](../governance/human-oversight) - Risk management

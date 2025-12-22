@@ -222,6 +222,6 @@ How to fix this issue?
 ## Related Content
 
 - [R.I.C.E. Framework](../rice-framework) - Framework explanation
-- [Code Generation Template](./code-generation-template) - For fixes
+- [Code Generation Template](./code-generation.md) - For fixes
 - [Refactoring Template](./refactoring-template) - For improvements
 

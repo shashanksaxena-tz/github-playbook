@@ -74,3 +74,8 @@ AI tools can assist with:
 
 
 
+## Learning Path
+
+1. **Beginner**: Start with Infrastructure as Code generation.
+2. **Intermediate**: Automate [CI/CD Pipelines](../advanced/lead-practices.md) with AI.
+3. **Advanced**: Master [Predictive Monitoring](../advanced/principal-practices.md) and self-healing systems.

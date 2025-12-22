@@ -79,3 +79,8 @@ Ensure AI-generated tests are:
 
 
 
+## Learning Path
+
+1. **Beginner**: Start with [Test Generation](../../developer-guide/daily-usage/test-generation.md) basics.
+2. **Intermediate**: Master [TDD with AI](../../shared/ai-native-sdlc/tdd-with-ai.md) workflows.
+3. **Advanced**: Implement [Automated Quality Gates](../advanced/senior-practices.md) and predictive testing.

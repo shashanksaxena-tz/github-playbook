@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: github-playbook
+    env: static
+    buildCommand: cd playbook && npm install && npm run build
+    staticPublishPath: playbook/build

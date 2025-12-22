@@ -29,10 +29,10 @@ As a Senior Architect, you're responsible for designing robust AI adoption frame
 ## Prerequisites
 
 Before diving into these advanced patterns, you should be familiar with:
-- Basic AI tool concepts from [Getting Started](../getting-started/introduction)
+- Basic AI tool concepts from [Getting Started](../getting-started/introduction.md)
 - [Model Selection fundamentals](../standards/model-selection)
 - [Context Management basics](../standards/context-management)
-- [Governance Policies overview](../governance/policies)
+- [Governance Policies overview](../governance/policies.md)
 
 ## Advanced Pattern 1: Multi-Model Selection Framework
 
@@ -63,7 +63,7 @@ model_selection_strategy:
     - algorithm_design
     - performance_optimization
     - systematic_code_reviews
-    model: o1-preview
+    model: o1
     rationale: "Exhaustive reasoning needed; willing to trade speed for depth"
 ```
 
@@ -665,7 +665,7 @@ A data-driven approach to measuring AI adoption success, identifying high perfor
 ## Related Resources
 
 - [Developer Senior Practices](../../developer-guide/advanced/developer-senior-practices) - Advanced coding patterns
-- [QA Senior Practices](../../qa-guide/advanced/senior-practices) - Testing strategies
-- [DevOps Senior Practices](../../devops-guide/advanced/senior-practices) - Infrastructure patterns
-- [Governance Policies](../governance/policies) - Organizational policies
+- [QA Senior Practices](../../qa-guide/advanced/senior-practices.md) - Testing strategies
+- [DevOps Senior Practices](../../devops-guide/advanced/senior-practices.md) - Infrastructure patterns
+- [Governance Policies](../governance/policies.md) - Organizational policies
 - [Context Management](../standards/context-management) - Context best practices

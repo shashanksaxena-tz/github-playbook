@@ -132,12 +132,12 @@ Get help understanding and fixing bugs.
 ## Learning Path
 
 1. **Beginner**: Start with [R.I.C.E. Framework](./rice-framework) to learn structured prompting
-2. **Intermediate**: Use [Prompt Templates](./templates/code-generation-template) for common tasks
+2. **Intermediate**: Use [Prompt Templates](./templates/code-generation.md) for common tasks
 3. **Advanced**: Study [Before/After Examples](./before-after-examples) to see prompt improvements
 
 ## Next Steps
 
 - Learn the [R.I.C.E. Framework](./rice-framework)
-- Explore [Prompt Templates](./templates/code-generation-template)
+- Explore [Prompt Templates](./templates/code-generation.md)
 - Review [Before/After Examples](./before-after-examples) to see improvements
 
