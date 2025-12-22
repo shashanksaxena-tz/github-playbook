@@ -175,6 +175,7 @@ This site can be deployed to various static hosting platforms:
 - **Netlify** - Automatic deployment on git push
 - **Vercel** - Fast global CDN
 - **Cloudflare Pages** - Unlimited bandwidth
+- **Render** - See `render.yaml` for configuration
 
 See the deployment workflows in `.github/workflows/` for more details.
 
